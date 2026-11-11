@@ -8,7 +8,8 @@
 :root{--m:#e6007e;--c:#009fe3;--y:#ffd400;--k:#1d1d1b}
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#f7f7f9;color:var(--k);line-height:1.5}
-header{background:var(--k);color:#fff;padding:26px 18px 22px}
+header{background:var(--k);color:#fff;padding:22px 18px 20px}
+header .home{display:inline-block;color:#fff;text-decoration:none;font-size:.85rem;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;margin-bottom:10px}
 header h1{margin:0;font-size:1.6rem;line-height:1.25}
 header h1 span{color:var(--m)}
 header p{margin:6px 0 0;color:#cfcfd6;font-size:.95rem}
@@ -17,11 +18,12 @@ main{max-width:880px;margin:0 auto;padding:16px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
 a.card{display:block;background:#fff;border-radius:16px;padding:16px;text-decoration:none;color:var(--k);box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:8px solid var(--m);transition:transform .15s}
 a.card:hover{transform:translateY(-3px)}
+a.card.c2{border-top-color:var(--c)}a.card.c3{border-top-color:var(--y)}a.card.c4{border-top-color:var(--k)}
 .card .no{display:inline-block;background:var(--k);color:#fff;font-weight:800;border-radius:8px;padding:1px 8px;font-size:.85rem}
+.card .ic{font-size:2rem;line-height:1}
 .card h2{margin:8px 0 4px;font-size:1.2rem}
 .card p{margin:0;font-size:.92rem;color:#5d5d66}
 .card .go{margin-top:10px;font-weight:800;color:var(--m)}
-.card.pdf{border-top-color:var(--c)}.card.pdf .go{color:var(--c)}
 .soon{background:#fff;border:2px dashed #cfcfd6;border-radius:16px;padding:16px;color:#8a8a94;display:flex;align-items:center;justify-content:center;text-align:center;min-height:150px}
 footer{text-align:center;color:#8a8a94;font-size:.8rem;padding:20px}
 </style>
@@ -34,21 +36,39 @@ footer{text-align:center;color:#8a8a94;font-size:.8rem;padding:20px}
 </header>
 <main>
   <div class="grid">
-    <a class="card" href="pdf-postscript/">
-      <span class="no">1</span>
-      <h2>PostScript a PDF</h2>
-      <p>PostScript, PDF, standardy <b>PDF/X</b>, tiskové PDF, export z InDesignu. Kartičky, kvíz, test.</p>
-      <div class="go">Otevřít lekci →</div>
+    <a class="card c1" href="polygraficka-montaz-nahledy-natisky/">
+      <span class="ic">📐</span>
+      <h2>Polygrafická montáž, náhledy a nátisky</h2>
+      <p>Montáž, vyřazování, maketa, náhledy a nátisky.</p>
+      <div class="go">Otevřít →</div>
     </a>
-    <a class="card pdf" href="pdf-postscript/PDF_format_opraveno.pdf">
-      <span class="no">1</span>
-      <h2>PDF formát – výukový text</h2>
-      <p>Text k lekci ke stažení a k tisku (PDF, 6 stran).</p>
-      <div class="go">Stáhnout PDF →</div>
+    <a class="card c2" href="digitalni-workflow/">
+      <span class="ic">💻</span>
+      <h2>Digitální workflow</h2>
+      <p>PostScript, PDF, PDF/X, tisková data.</p>
+      <div class="go">Otevřít →</div>
     </a>
-    <div class="soon">Další materiály brzy přibudou.</div>
+    <a class="card c3" href="graficka-uprava-knih/">
+      <span class="ic">📚</span>
+      <h2>Grafická úprava knih</h2>
+      <p>Stavba knihy, sazba, typografie.</p>
+      <div class="go">Otevřít →</div>
+    </a>
+    <a class="card c4" href="graficka-uprava-novin-a-casopisu/">
+      <span class="ic">📰</span>
+      <h2>Grafická úprava novin a časopisů</h2>
+      <p>Layout, sloupce, periodika.</p>
+      <div class="go">Otevřít →</div>
+    </a>
+    <a class="card c1" href="publikovani-na-internetu/">
+      <span class="ic">🌐</span>
+      <h2>Publikování na internetu</h2>
+      <p>Web, obrázky pro web, formáty.</p>
+      <div class="go">Otevřít →</div>
+    </a>
+
   </div>
 </main>
-<footer>Materiály pro výuku · 3. ročník maturitního oboru</footer>
+<footer>Materiály pro výuku · 3. ročník · Reprodukční grafik pro média</footer>
 </body>
 </html>

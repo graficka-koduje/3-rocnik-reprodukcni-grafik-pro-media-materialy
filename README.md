@@ -1,8 +1,11 @@
 # 3. ročník – Reprodukční grafik pro média – materiály
 
-Rozcestník výukových materiálů pro 3. ročník maturitního oboru 34-53-L/01.
+Hlavní rozcestník (`index.html`) → 5 tematických rozcestníků (složky) → lekce.
 
-- `index.html` – rozcestník
-- `pdf-postscript/` – lekce PostScript a PDF (+ výukový text v PDF)
+- `polygraficka-montaz-nahledy-natisky/`
+- `digitalni-workflow/` – lekce `pdf-postscript/` (PostScript a PDF)
+- `graficka-uprava-knih/`
+- `graficka-uprava-novin-a-casopisu/`
+- `publikovani-na-internetu/`
 
-Každý nový materiál = nová složka s vlastním `index.html` a nová karta v rozcestníku.
+Nová lekce = podsložka v příslušném tématu s vlastním `index.html` + karta v `index.html` tématu.
