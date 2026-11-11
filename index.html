@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3. ročník – Reprodukční grafik pro média – materiály</title>
+<style>
+:root{--m:#e6007e;--c:#009fe3;--y:#ffd400;--k:#1d1d1b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#f7f7f9;color:var(--k);line-height:1.5}
+header{background:var(--k);color:#fff;padding:26px 18px 22px}
+header h1{margin:0;font-size:1.6rem;line-height:1.25}
+header h1 span{color:var(--m)}
+header p{margin:6px 0 0;color:#cfcfd6;font-size:.95rem}
+.cmyk{display:flex;gap:4px;margin-top:12px}.cmyk i{width:26px;height:6px;border-radius:3px}
+main{max-width:880px;margin:0 auto;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+a.card{display:block;background:#fff;border-radius:16px;padding:16px;text-decoration:none;color:var(--k);box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:8px solid var(--m);transition:transform .15s}
+a.card:hover{transform:translateY(-3px)}
+.card .no{display:inline-block;background:var(--k);color:#fff;font-weight:800;border-radius:8px;padding:1px 8px;font-size:.85rem}
+.card h2{margin:8px 0 4px;font-size:1.2rem}
+.card p{margin:0;font-size:.92rem;color:#5d5d66}
+.card .go{margin-top:10px;font-weight:800;color:var(--m)}
+.card.pdf{border-top-color:var(--c)}.card.pdf .go{color:var(--c)}
+.soon{background:#fff;border:2px dashed #cfcfd6;border-radius:16px;padding:16px;color:#8a8a94;display:flex;align-items:center;justify-content:center;text-align:center;min-height:150px}
+footer{text-align:center;color:#8a8a94;font-size:.8rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <h1>3. ročník · <span>Reprodukční grafik pro média</span> · materiály</h1>
+  <p>Obor 34-53-L/01 · VOŠ, SŠ, ZŠ a MŠ Hradec Králové</p>
+  <div class="cmyk"><i style="background:#009fe3"></i><i style="background:#e6007e"></i><i style="background:#ffd400"></i><i style="background:#1d1d1b"></i></div>
+</header>
+<main>
+  <div class="grid">
+    <a class="card" href="pdf-postscript/">
+      <span class="no">1</span>
+      <h2>PostScript a PDF</h2>
+      <p>PostScript, PDF, standardy <b>PDF/X</b>, tiskové PDF, export z InDesignu. Kartičky, kvíz, test.</p>
+      <div class="go">Otevřít lekci →</div>
+    </a>
+    <a class="card pdf" href="pdf-postscript/PDF_format_opraveno.pdf">
+      <span class="no">1</span>
+      <h2>PDF formát – výukový text</h2>
+      <p>Text k lekci ke stažení a k tisku (PDF, 6 stran).</p>
+      <div class="go">Stáhnout PDF →</div>
+    </a>
+    <div class="soon">Další materiály brzy přibudou.</div>
+  </div>
+</main>
+<footer>Materiály pro výuku · 3. ročník maturitního oboru</footer>
+</body>
+</html>
