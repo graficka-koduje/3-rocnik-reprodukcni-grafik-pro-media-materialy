@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2. Předtisková příprava (Prepress) – maturitní téma – 3. G</title>
+<style>
+:root{--m:#e6007e;--c:#009fe3;--y:#ffd400;--k:#1d1d1b;--bg:#f7f7f9;--card:#fff;--ok:#1a9b4b;--bad:#d62d20;--muted:#5d5d66}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--k);line-height:1.5;font-size:17px}
+header{background:var(--k);color:#fff;padding:22px 16px 18px}
+header .home{display:inline-block;color:#fff;text-decoration:none;font-size:.85rem;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;margin-bottom:10px}
+header h1{margin:0;font-size:1.7rem;line-height:1.2}
+header h1 span{color:var(--m)}
+header p{margin:6px 0 0;color:#cfcfd6;font-size:.95rem}
+.cmyk{display:flex;gap:4px;margin-top:10px}.cmyk i{width:22px;height:6px;border-radius:3px}
+nav.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e3e3ea;overflow-x:auto;white-space:nowrap;padding:8px 10px}
+nav.top a{display:inline-block;padding:6px 11px;margin-right:4px;border-radius:999px;background:#f0f0f5;color:var(--k);text-decoration:none;font-size:.88rem;font-weight:600}
+nav.top a:hover{background:var(--m);color:#fff}
+main{max-width:880px;margin:0 auto;padding:12px}
+section{background:var(--card);border-radius:16px;padding:18px 16px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.06);scroll-margin-top:60px}
+h2{margin:0 0 10px;font-size:1.4rem;color:var(--m)}
+h3{margin:18px 0 8px;font-size:1.1rem;scroll-margin-top:60px}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--m);color:#fff;font-size:.95rem;margin-right:6px;vertical-align:2px}
+.box{border:3px solid var(--k);border-radius:12px;padding:12px 14px;margin:12px 0;background:#fff}
+.box.m{border-color:var(--m)}.box.c{border-color:var(--c)}.box.y{border-color:var(--y);background:#fffbe6}
+.box h4{margin:0 0 6px;font-size:1rem}
+.big{font-size:1.15rem;font-weight:700}
+ul.keys{margin:6px 0;padding-left:20px}ul.keys li{margin:4px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:640px){.grid2,.grid3{grid-template-columns:1fr}}
+figure{margin:12px 0}figure img,figure svg{max-width:100%;height:auto;border-radius:8px;display:block;margin:0 auto}
+figcaption{font-size:.85rem;color:var(--muted);text-align:center;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border:1px solid #ddd;padding:7px 8px;text-align:left;vertical-align:top}
+th{background:#f3f3f7}
+.yes{color:var(--ok);font-weight:800}.no{color:var(--bad);font-weight:800}
+.tablewrap{overflow-x:auto}
+.tag{display:inline-block;padding:1px 8px;border-radius:6px;font-weight:700;font-size:.85rem}
+.tag.m{background:#fde3f1;color:#a3005a}.tag.c{background:#dff2fc;color:#005f88}
+code,pre{font-family:ui-monospace,Consolas,monospace}
+/* myšlenková mapa */
+.map{display:grid;gap:10px}
+.map .center{background:var(--k);color:#fff;border-radius:14px;padding:14px;text-align:center;font-weight:800;font-size:1.15rem}
+.map .center small{display:block;font-weight:400;color:#cfcfd6;font-size:.85rem}
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.branch{border:2px solid #e3e3ea;border-left:8px solid var(--m);border-radius:12px;padding:10px 12px;background:#fff}
+.branch:nth-child(4n+2){border-left-color:var(--c)}.branch:nth-child(4n+3){border-left-color:var(--y)}.branch:nth-child(4n+4){border-left-color:var(--k)}
+.branch>a{font-weight:800;color:var(--k);text-decoration:none;font-size:1.02rem}
+.branch .subs{margin-top:6px;display:flex;flex-wrap:wrap;gap:5px}
+.branch .subs a{font-size:.84rem;padding:3px 8px;border-radius:999px;background:#f0f0f5;color:var(--k);text-decoration:none}
+.branch .subs a:hover,.branch>a:hover{color:var(--m)}
+/* výluh */
+.vyluh{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.vcard{border:2px solid #e3e3ea;border-radius:12px;padding:10px;text-align:center;background:#fff}
+.vcard svg{width:100%;height:96px}
+.vcard>b{display:block;font-size:1.05rem;margin:4px 0 2px}
+.vcard p{margin:0;font-size:.92rem}
+.vcard a{font-size:.8rem;color:var(--c)}
+.say{background:#fde3f1;border-radius:10px;padding:10px 12px;margin-top:12px}
+/* PostScript hřiště */
+.ps{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+@media(max-width:640px){.ps{grid-template-columns:1fr}}
+.ps textarea{width:100%;height:250px;font-family:ui-monospace,Consolas,monospace;font-size:15px;border:2px solid var(--k);border-radius:10px;padding:8px;resize:vertical}
+.ps canvas{width:100%;max-width:300px;aspect-ratio:1;border:2px solid var(--k);border-radius:10px;background:#fff;display:block;margin:0 auto;
+ background-image:linear-gradient(#eee 1px,transparent 1px),linear-gradient(90deg,#eee 1px,transparent 1px);background-size:10% 10%}
+.btns{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+button{font:inherit;font-size:.92rem;font-weight:700;padding:8px 12px;border-radius:10px;border:2px solid var(--k);background:#fff;cursor:pointer;color:var(--k)}
+button:hover{background:var(--k);color:#fff}
+button.pri{background:var(--m);border-color:var(--m);color:#fff}
+.err{color:var(--bad);font-weight:700;min-height:1.4em;font-size:.92rem}
+/* spadávka */
+.bleed-btns button.on{background:var(--m);border-color:var(--m);color:#fff}
+.lay{transition:opacity .3s}
+/* kartičky */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.flip{perspective:900px;height:180px;cursor:pointer}
+.flip .in{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .f,.flip .b{position:absolute;inset:0;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;text-align:center;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flip .f{background:var(--k);color:#fff}
+.flip .f .ic{font-size:2.2rem;line-height:1}
+.flip .f b{font-size:1.15rem;margin-top:6px}
+.flip .b{background:#fff;border:3px solid var(--m);transform:rotateY(180deg);font-size:.95rem}
+/* kvíz */
+.q{border:2px solid #e3e3ea;border-radius:12px;padding:12px;margin:10px 0}
+.q p{margin:0 0 8px;font-weight:700}
+.q .opts{display:grid;gap:6px}
+.q .opts button{text-align:left;font-weight:500;border-color:#cfcfd6}
+.q .opts button.right{background:#e3f6ea;border-color:var(--ok);color:var(--k)}
+.q .opts button.wrong{background:#fde6e4;border-color:var(--bad);color:var(--k)}
+.q .fb{margin-top:8px;font-size:.93rem;display:none}
+.score{font-size:1.2rem;font-weight:800}
+/* psaní */
+.wq textarea{width:100%;min-height:120px;border:2px solid var(--k);border-radius:10px;padding:8px;font:inherit}
+.res{margin-top:10px;display:none}
+.res .chip{display:inline-block;margin:3px 4px 3px 0;padding:3px 9px;border-radius:999px;font-size:.88rem;font-weight:700}
+.chip.ok{background:#e3f6ea;color:#11602f}.chip.miss{background:#fde6e4;color:#8c1a12}
+.model{background:#f3f3f7;border-radius:10px;padding:10px;margin-top:8px}
+.warn{background:#fff3cd;border-radius:10px;padding:8px 10px;margin-top:8px}
+/* chooser */
+.choose .ans{margin-top:10px;display:none}
+/* plovoucí šipka */
+#back{position:fixed;right:14px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:var(--m);color:#fff;border:none;font-size:1.6rem;box-shadow:0 3px 10px rgba(0,0,0,.25);display:none;align-items:center;justify-content:center;line-height:1}
+#back small{font-size:.55rem;display:block;font-weight:700}
+#back span{display:flex;flex-direction:column;align-items:center}
+.err-list{display:grid;gap:8px}
+.err-row{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:10px;overflow:hidden;border:2px solid #e3e3ea}
+.err-row div{padding:8px 10px;font-size:.93rem}
+.err-row div:first-child{background:#fde6e4}.err-row div:last-child{background:#e3f6ea}
+@media(max-width:520px){.err-row{grid-template-columns:1fr}}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:20px}
+.pfhero{background:var(--k);color:#fff;border-radius:14px;padding:18px;text-align:center;margin-bottom:10px;scroll-margin-top:60px}
+.pfword{font-size:2.4rem;font-weight:900;letter-spacing:.12em;color:var(--y)}
+.pfsub{font-size:1.1rem}
+.pfchips{display:flex;flex-wrap:wrap;gap:6px}
+.pfchips a{padding:6px 11px;border-radius:999px;background:#f0f0f5;color:var(--k);text-decoration:none;font-weight:700;font-size:.9rem}
+.pfn{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:7px;background:var(--y);color:var(--k);font-size:.9rem;margin-right:6px;vertical-align:2px}
+.rgb-btns button.on{background:var(--m);border-color:var(--m);color:#fff}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.sw div{height:70px;border-radius:10px;border:2px solid #1d1d1b;transition:background .6s;display:flex;align-items:flex-end;justify-content:center;font-size:.75rem;font-weight:700;color:#fff;text-shadow:0 1px 2px #000;padding-bottom:4px}
+.sepbox{display:grid;grid-template-columns:1.4fr 1fr;gap:10px;align-items:center}
+@media(max-width:560px){.sepbox{grid-template-columns:1fr}}
+.separt{position:relative;aspect-ratio:3/2;border:2px solid #1d1d1b;border-radius:10px;background:#fff;overflow:hidden}
+.separt svg{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:multiply;transition:opacity .3s}
+.sepctl label{display:flex;align-items:center;gap:6px;margin:4px 0;font-size:.95rem}
+.sepctl i{width:16px;height:16px;border-radius:4px;border:1px solid #333;display:inline-block}
+.report{border:3px solid var(--k);border-radius:12px;overflow:hidden;margin:8px 0 14px}
+.rhead{background:var(--k);color:#fff;padding:8px 12px;font-size:.92rem}
+.ritem{padding:7px 12px;border-top:1px solid #e3e3ea;font-size:.95rem}
+.ritem.ok{background:#f1faf4}.ritem.wa{background:#fff8e1}.ritem.er{background:#fdeceb}
+.ritem a{float:right;font-weight:800;color:var(--k);text-decoration:none}
+.gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.gli{border:2px solid #e3e3ea;border-radius:12px;padding:10px;display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:start}
+.gli .gi{font-size:1.8rem;line-height:1;text-align:center}
+.gli b{font-size:1.02rem}
+.gli p{margin:2px 0 4px;font-size:.92rem}
+.gli .gl-links a{font-size:.82rem;font-weight:700;margin-right:8px;text-decoration:none;padding:2px 8px;border-radius:999px;background:#f0f0f5;color:var(--k)}
+.gli .gl-links a.sl{background:#dff2fc;color:#005f88}
+@media print{nav.top,#back,.btns,.no-print{display:none!important}section{break-inside:avoid;box-shadow:none;border:1px solid #ccc}body{background:#fff}.flip .b{position:static;transform:none}.flip{height:auto}.flip .in{transform:none!important}.flip .f{position:static}}
+
+/* --- otázka 2 --- */
+.check{display:grid;gap:6px}
+.chk{display:flex;gap:10px;align-items:flex-start;border:2px solid #e3e3ea;border-radius:10px;padding:8px 10px}
+.chk input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--ok)}
+.chk a{color:var(--k);text-decoration:none}.chk a:hover{color:var(--m)}
+.chk:has(input:checked){background:#e3f6ea;border-color:var(--ok)}
+.steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:6px;margin:8px 0}
+.steps button{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.82rem;padding:8px 4px;border-color:#cfcfd6;text-align:center}
+.steps button .ic{font-size:1.5rem}.steps button small{font-size:.7rem;color:var(--muted)}
+.steps button.on{background:var(--m);border-color:var(--m);color:#fff}.steps button.on small{color:#fff}
+.hra{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+@media(max-width:640px){.hra{grid-template-columns:1fr}}
+.hra svg{width:100%;border-radius:10px;display:block;margin:0 auto}
+.hot{cursor:pointer}.hot.hit rect,.hot.hit circle{stroke:#d62d20;stroke-width:3;fill:rgba(214,45,32,.12)!important}
+.imp{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;align-items:center}
+@media(max-width:640px){.imp{grid-template-columns:1fr}}
+.imp svg{width:100%}
+.side-btns button.on,.light-btns button.on,.ct-btns button.on,.cell-btns button.on{background:var(--m);border-color:var(--m);color:#fff}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.vs{grid-template-columns:1fr}}
+.moire,.lpi,.cell{display:grid;grid-template-columns:200px 1fr;gap:14px;align-items:start}
+@media(max-width:560px){.moire,.lpi,.cell{grid-template-columns:1fr}}
+.moire svg,.lpi svg,.cell svg{width:100%;max-width:220px;border:2px solid var(--k);border-radius:10px;display:block;margin:0 auto;background:#fff}
+.calc{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0}
+.calc label{font-weight:800}
+.calc select{font:inherit;font-size:1.05rem;padding:6px 10px;border:2px solid var(--k);border-radius:8px;margin-left:6px}
+.steps-calc{display:grid;gap:6px;margin:8px 0}
+.st{border:2px solid #e3e3ea;border-radius:10px;padding:8px 10px 8px 46px;position:relative;font-size:1rem}
+.st>span{position:absolute;left:10px;top:8px;width:26px;height:26px;border-radius:50%;background:var(--k);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.9rem}
+.st small{color:var(--muted)}
+.st.ok{background:#e3f6ea;border-color:var(--ok)}.st.ok>span{background:var(--ok)}
+.st.bad{background:#fde6e4;border-color:var(--bad)}.st.bad>span{background:var(--bad)}
+.grad{display:flex;height:44px;border:2px solid var(--k);border-radius:8px;overflow:hidden;margin-top:8px}.grad i{flex:1}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:10px 0}
+.chain .lk{background:#fff;border:2px solid var(--k);border-radius:10px;padding:6px 10px;font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:6px;animation:pop .4s both}
+.chain .lk span{font-size:1.3rem}.chain .arr{font-size:1.2rem;color:var(--m)}
+@keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:none}}
+.box.ext{border-color:#9aa0a6;background:#f0f0f3;color:#5d5d66;padding:6px 12px;display:inline-block}
+@media print{.hra,.moire,.lpi,.cell{grid-template-columns:1fr}}
+
+/* --- zjednodušení, čtení --- */
+.pin{background:#fff3cd;border-left:8px solid var(--y);border-radius:10px;padding:10px 12px;margin:4px 0 12px;font-size:1.08rem}
+body.short .det{display:none!important}
+body.big{font-size:20px}
+nav.top button.tool{display:inline-block;padding:5px 10px;margin-right:4px;border-radius:999px;font-size:.85rem;border:2px solid var(--k)}
+nav.top button.tool.on{background:var(--k);color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.tile{border:2px solid #e3e3ea;border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;font-size:.92rem}
+.tile .ti{font-size:1.6rem;line-height:1}.tile b{font-size:1rem}
+.tile .ok{color:#11602f;font-weight:700}.tile .ko{color:#8c1a12}
+.vsx{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;text-align:center;border:3px solid var(--k);border-radius:12px;padding:10px;margin:10px 0}
+.vsmid{font-size:2rem;font-weight:900;color:var(--m)}
+.ntypes{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:8px 0}
+.nt{border:2px solid #e3e3ea;border-radius:12px;padding:10px;position:relative}
+.nt .nn{position:absolute;top:8px;right:10px;width:26px;height:26px;border-radius:50%;background:var(--m);color:#fff;display:grid;place-items:center;font-weight:800}
+.nt .ti{font-size:1.8rem;display:block}.nt>b{display:block;font-size:1.05rem}.nt small{color:var(--muted)}
+.nt p{margin:4px 0;font-size:.93rem}
+.trap-btns button.on{background:var(--m);border-color:var(--m);color:#fff}
+.trapbox svg{width:100%;max-width:320px;display:block;margin:0 auto;border:2px solid var(--k);border-radius:10px}
+.lupa svg{width:100%;display:block}
+.dalka{display:flex;gap:14px;justify-content:center;text-align:center}
+.dalka svg{width:130px;border:2px solid var(--k);border-radius:10px;display:block}
+</style>
+</head>
+<body>
+<header>
+  <a class="home" href="../">← Maturitní témata</a>
+  <h1><span>2.</span> Předtisková příprava (Prepress)</h1>
+  <p>Maturitní téma č. 2 · Technologie · Reprodukční grafik pro média · 3. G</p>
+  <div class="cmyk"><i style="background:#009fe3"></i><i style="background:#e6007e"></i><i style="background:#ffd400"></i><i style="background:#1d1d1b"></i></div>
+</header>
+<nav class="top">
+  <button class="tool" id="shortBtn" onclick="toggleShort()">⚡ Jen to hlavní</button><button class="tool" id="bigBtn" onclick="toggleBig()">A+</button>
+  <a href="#mapa">🗺️ Mapa</a><a href="#vyluh">⭐ Musí zaznít</a><a href="#umet">✅ Co umět</a><a href="#prepress">Prepress</a><a href="#nahled">Náhled a nátisk</a><a href="#montaz">Montáž</a><a href="#kontrola">Kontrola dat</a><a href="#rip">RIP</a><a href="#dpi">DPI · LPI</a><a href="#forma">Tisková forma</a><a href="#osvit">Osvit · CTF · CTP</a><a href="#slovnicek">📖 Slovníček</a><a href="#karticky">🃏 Kartičky</a><a href="#kviz">✅ Kvíz</a><a href="#psani">✍️ Napiš</a>
+</nav>
+<main>
+
+<!-- ============ ZADÁNÍ ============ -->
+<section id="zadani">
+  <h2>🎯 Zadání otázky</h2>
+  <div class="box m">
+    <p class="big" style="margin:0 0 6px">2. Předtisková příprava (Prepress)</p>
+    <ul class="keys">
+      <li><b>Náhled</b> a <b>nátisk</b>, <b>montáž</b>, <b>kontrola tiskových dat</b> před tiskem.</li>
+      <li><b>RIP</b> a jeho nastavení, <b>DPI</b>, <b>LPI</b>.</li>
+      <li>Zhotovení <b>tiskové formy</b>, <b>osvit</b> a <b>osvitové jednotky</b> (technologie <b>CTP</b>, <b>CTF</b>).</li>
+    </ul>
+  </div>
+  <div class="box y"><b>⚡ Jen to hlavní</b> (nahoře) = schová podrobnosti. Zůstane jen to nejdůležitější. <b>A+</b> = větší písmo.</div>
+  <div class="box y"><b>🤟 Pro neslyšící:</b> u pojmů je odkaz <b>🤟 znakový jazyk</b>. Vede do školního <a href="https://slovnik.neslhk.com/" target="_blank" rel="noopener">slovníku pro neslyšící</a>. Všechny pojmy najdeš ve <a class="ml" href="#slovnicek">📖 Slovníčku</a>.</div>
+</section>
+
+<!-- ============ MAPA ============ -->
+<section id="mapa">
+  <h2>🗺️ Myšlenková mapa</h2>
+  <div class="box y"><b>Jak na to:</b> mluv <b>podle čísel 1 → 8</b>. Klikni na <b>pojem</b> → skočíš k vysvětlení. Šipka <b>↑</b> vpravo dole tě vrátí zpět.</div>
+  <div class="map">
+    <div class="center">Předtisková příprava (prepress)<small>vše, co se udělá od hotových dat až po tiskovou formu</small></div>
+    <div class="branches">
+      <div class="branch"><a href="#prepress" class="ml">1 · Co je prepress</a>
+        <div class="subs"><a class="ml" href="#p-co">prepress – press – postpress</a><a class="ml" href="#p-kroky">kroky (workflow)</a></div></div>
+      <div class="branch"><a href="#kontrola" class="ml">2 · Kontrola tiskových dat</a>
+        <div class="subs"><a class="ml" href="#k-co">preflight</a><a class="ml" href="#k-seznam">co kontrolujeme</a><a class="ml" href="#k-hra">najdi chyby</a><a class="ml" href="#k-sw">software</a></div></div>
+      <div class="branch"><a href="#montaz" class="ml">3 · Montáž</a>
+        <div class="subs"><a class="ml" href="#m-co">archová montáž</a><a class="ml" href="#m-vyrazovani">vyřazování stran</a><a class="ml" href="#m-maketa">maketa</a><a class="ml" href="#m-znacky">tiskové značky</a><a class="ml" href="#m-rub">vlastní × cizí rub</a><a class="ml" href="#m-sw">software</a></div></div>
+      <div class="branch"><a href="#nahled" class="ml">4 · Náhled a nátisk</a>
+        <div class="subs"><a class="ml" href="#n-nahled">náhled (soft proof)</a><a class="ml" href="#n-natisk">nátisk (hard proof)</a><a class="ml" href="#n-druhy">druhy nátisků</a><a class="ml" href="#n-cert">certifikovaný nátisk</a><a class="ml" href="#n-svetlo">světlo D50</a><a class="ml" href="#n-imprimatur">imprimatur</a></div></div>
+      <div class="branch"><a href="#rip" class="ml">5 · RIP a nastavení</a>
+        <div class="subs"><a class="ml" href="#r-co">co je RIP</a><a class="ml" href="#r-kroky">co RIP dělá</a><a class="ml" href="#r-nastaveni">nastavení RIPu</a><a class="ml" href="#r-trap">trapping</a><a class="ml" href="#r-rastr">rastr pod lupou</a><a class="ml" href="#r-am-fm">AM × FM rastr</a><a class="ml" href="#r-uhly">úhly rastru, moaré</a><a class="ml" href="#r-krivka">kalibrační křivka</a></div></div>
+      <div class="branch"><a href="#dpi" class="ml">6 · DPI, LPI (a PPI)</a>
+        <div class="subs"><a class="ml" href="#d-pojmy">co je co</a><a class="ml" href="#d-lpi">jakou LPI zvolit</a><a class="ml" href="#d-dalka">z dálky</a><a class="ml" href="#d-bunka">mřížka 16 × 16</a><a class="ml" href="#d-vypocet">výpočet odstínů</a><a class="ml" href="#d-ppi">výpočet PPI</a></div></div>
+      <div class="branch"><a href="#forma" class="ml">7 · Tisková forma</a>
+        <div class="subs"><a class="ml" href="#f-co">co to je</a><a class="ml" href="#f-desky">ofsetové desky</a></div></div>
+      <div class="branch"><a href="#osvit" class="ml">8 · Osvit · CTF · CTP</a>
+        <div class="subs"><a class="ml" href="#o-ctf">CTF</a><a class="ml" href="#o-ctp">CTP</a><a class="ml" href="#o-srovnani">CTF × CTP</a><a class="ml" href="#o-jednotky">osvitové jednotky</a><a class="ml" href="#o-dalsi">CTPress, CTS…</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VÝLUH ============ -->
+<section id="vyluh">
+  <h2>⭐ Tohle musí zaznít</h2>
+  <div class="vyluh">
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="6" y="34" width="56" height="30" rx="6" fill="#e6007e"/><text x="34" y="53" font-size="10" font-weight="800" fill="#fff" text-anchor="middle">PREPRESS</text><path d="M64 49h10" stroke="#1d1d1b" stroke-width="3"/><rect x="76" y="34" width="48" height="30" rx="6" fill="#009fe3"/><text x="100" y="53" font-size="10" font-weight="800" fill="#fff" text-anchor="middle">PRESS</text><path d="M126 49h10" stroke="#1d1d1b" stroke-width="3"/><rect x="138" y="34" width="58" height="30" rx="6" fill="#1d1d1b"/><text x="167" y="53" font-size="9" font-weight="800" fill="#ffd400" text-anchor="middle">POSTPRESS</text></svg>
+      <b>Prepress</b><p>Předtisková příprava. Vše <b>před tiskem</b>: data → kontrola → montáž → nátisk → RIP → <b>tisková forma</b>.</p><a class="ml" href="#prepress">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="40" y="8" width="70" height="82" rx="6" fill="#fff" stroke="#1d1d1b" stroke-width="4"/><path d="M52 30l6 6 10-12M52 52l6 6 10-12" stroke="#1a9b4b" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M53 72l12 12M65 72l-12 12" stroke="#d62d20" stroke-width="5" stroke-linecap="round"/><path d="M76 32h24M76 54h24M76 78h24" stroke="#1d1d1b" stroke-width="4"/><circle cx="150" cy="44" r="24" fill="none" stroke="#e6007e" stroke-width="6"/><path d="M167 62l20 20" stroke="#e6007e" stroke-width="8" stroke-linecap="round"/></svg>
+      <b>Kontrola dat (preflight)</b><p>Před tiskem zkontroluji: <b>spadávku</b>, <b>CMYK</b>, <b>rozlišení 300 ppi</b>, <b>písma</b>, přímé barvy.</p><a class="ml" href="#kontrola">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="30" y="8" width="140" height="80" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><g font-size="18" font-weight="800" text-anchor="middle"><text x="65" y="40" fill="#e6007e" transform="rotate(180 65 33)">5</text><text x="135" y="40" fill="#e6007e" transform="rotate(180 135 33)">4</text><text x="65" y="76" fill="#009fe3">8</text><text x="135" y="76" fill="#009fe3">1</text></g><path d="M100 8v80M30 48h140" stroke="#1d1d1b" stroke-width="2" stroke-dasharray="5 4"/></svg>
+      <b>Montáž a vyřazování</b><p>Strany se rozmístí na <b>tiskový arch</b> tak, aby po složení šly <b>za sebou</b>. Pomůže <b>maketa</b>.</p><a class="ml" href="#montaz">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="12" y="12" width="78" height="54" rx="5" fill="#1d1d1b"/><rect x="18" y="18" width="66" height="42" fill="#009fe3"/><path d="M40 66l-6 16h34l-6-16" fill="#1d1d1b"/><rect x="118" y="10" width="62" height="78" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><rect x="126" y="18" width="46" height="34" fill="#e6007e"/><g><rect x="126" y="64" width="9" height="12" fill="#009fe3"/><rect x="137" y="64" width="9" height="12" fill="#e6007e"/><rect x="148" y="64" width="9" height="12" fill="#ffd400"/><rect x="159" y="64" width="9" height="12" fill="#1d1d1b"/></g></svg>
+      <b>Náhled × nátisk</b><p><b>Náhled</b> = na <b>monitoru</b> (soft proof). <b>Nátisk</b> = <b>na papíře</b>, věrné barvy (hard proof).</p><a class="ml" href="#nahled">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="20" y="16" width="70" height="64" rx="6" fill="#fff" stroke="#1d1d1b" stroke-width="4"/><text x="30" y="56" font-size="20" font-weight="800" fill="#1d1d1b">✓ OK</text><path d="M110 48c20-30 50-30 70 0" fill="none" stroke="#1a9b4b" stroke-width="5"/><text x="118" y="82" font-size="14" font-weight="800" fill="#1a9b4b">podpis</text></svg>
+      <b>Imprimatur</b><p><b>Schválení</b> nátisku zákazníkem (podpis). Pak se smí <b>tisknout</b>.</p><a class="ml" href="#n-imprimatur">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><path d="M14 20h40l12 12v46H14z" fill="#fff" stroke="#d62d20" stroke-width="4"/><text x="18" y="58" font-size="13" font-weight="800" fill="#d62d20">PDF</text><path d="M70 48h14" stroke="#1d1d1b" stroke-width="4"/><rect x="86" y="28" width="44" height="40" rx="8" fill="#009fe3"/><text x="94" y="54" font-size="15" font-weight="800" fill="#fff">RIP</text><path d="M132 48h14" stroke="#1d1d1b" stroke-width="4"/><g fill="#1d1d1b"><circle cx="156" cy="34" r="5"/><circle cx="172" cy="34" r="3"/><circle cx="188" cy="34" r="1.5"/><circle cx="156" cy="50" r="6"/><circle cx="172" cy="50" r="4"/><circle cx="188" cy="50" r="2"/><circle cx="156" cy="66" r="7"/><circle cx="172" cy="66" r="5"/><circle cx="188" cy="66" r="3"/></g></svg>
+      <b>RIP</b><p><b>Raster Image Processor.</b> Převede PDF na <b>rastrové body</b> – pro každou barvu C, M, Y, K zvlášť.</p><a class="ml" href="#rip">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><g fill="#1d1d1b"><circle cx="30" cy="30" r="9"/><circle cx="60" cy="30" r="6"/><circle cx="30" cy="60" r="6"/><circle cx="60" cy="60" r="3"/></g><text x="16" y="88" font-size="13" font-weight="800" fill="#e6007e">LPI = řádky</text><g fill="#009fe3"><rect x="120" y="14" width="6" height="6"/><rect x="128" y="14" width="6" height="6"/><rect x="136" y="14" width="6" height="6"/><rect x="120" y="22" width="6" height="6"/><rect x="128" y="22" width="6" height="6"/><rect x="144" y="22" width="6" height="6"/><rect x="120" y="30" width="6" height="6"/><rect x="152" y="30" width="6" height="6"/><rect x="136" y="38" width="6" height="6"/><rect x="128" y="46" width="6" height="6"/><rect x="144" y="46" width="6" height="6"/></g><text x="108" y="88" font-size="13" font-weight="800" fill="#009fe3">DPI = body</text></svg>
+      <b>DPI × LPI</b><p><b>DPI</b> = laserové body na palec (např. 2400). <b>LPI</b> = hustota rastru – řady tiskových bodů na palec (např. 150).</p><a class="ml" href="#dpi">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><text x="12" y="38" font-size="15" font-weight="800" fill="#1d1d1b">2400 : 150 = 16</text><text x="12" y="62" font-size="15" font-weight="800" fill="#1d1d1b">16 × 16 + 1 =</text><text x="126" y="62" font-size="18" font-weight="900" fill="#e6007e">257</text><text x="12" y="86" font-size="12" fill="#5d5d66">odstínů šedi</text></svg>
+      <b>Výpočet odstínů</b><p>(<b>DPI : LPI</b>)² + 1 = počet odstínů. Musí jich být aspoň <b>256</b>.</p><a class="ml" href="#d-vypocet">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="34" y="12" width="132" height="72" rx="4" fill="#c9ced6" stroke="#1d1d1b" stroke-width="3"/><rect x="50" y="26" width="46" height="44" fill="#1d1d1b" opacity=".85"/><rect x="104" y="26" width="46" height="20" fill="#1d1d1b" opacity=".85"/><text x="58" y="94" font-size="12" font-weight="700" fill="#5d5d66">hliníková deska</text></svg>
+      <b>Tisková forma</b><p>Nese <b>obraz pro tisk</b>. V ofsetu je to <b>hliníková deska</b>. Každá barva = jedna deska.</p><a class="ml" href="#forma">víc ↓</a></div>
+    <div class="vcard"><svg viewBox="0 0 200 96"><rect x="6" y="20" width="32" height="24" rx="4" fill="#1d1d1b"/><path d="M40 32h8" stroke="#1d1d1b" stroke-width="3"/><rect x="50" y="20" width="30" height="24" rx="2" fill="#5d5d66"/><text x="54" y="36" font-size="9" fill="#fff">film</text><path d="M82 32h8" stroke="#1d1d1b" stroke-width="3"/><rect x="92" y="20" width="34" height="24" rx="2" fill="#c9ced6" stroke="#1d1d1b"/><text x="96" y="36" font-size="9">deska</text><text x="132" y="37" font-size="13" font-weight="800" fill="#d62d20">CTF</text><rect x="6" y="58" width="32" height="24" rx="4" fill="#1d1d1b"/><path d="M40 70h50" stroke="#1d1d1b" stroke-width="3"/><rect x="92" y="58" width="34" height="24" rx="2" fill="#c9ced6" stroke="#1d1d1b"/><text x="96" y="74" font-size="9">deska</text><text x="132" y="75" font-size="13" font-weight="800" fill="#1a9b4b">CTP</text></svg>
+      <b>CTF × CTP</b><p><b>CTF</b>: počítač → <b>film</b> → deska. <b>CTP</b>: počítač → <b>rovnou deska</b>. Osvítí ji <b>laser</b> v osvitové jednotce.</p><a class="ml" href="#osvit">víc ↓</a></div>
+  </div>
+  <div class="say"><b>Řekni u zkoušky:</b> „Prepress je předtisková příprava. Nejdřív zkontroluji tisková data – preflight. Pak udělám montáž: vyřadím strany na tiskový arch. Zákazník dostane náhled na monitoru nebo nátisk na papíře a podepíše imprimatur. RIP převede data na rastrové body podle DPI a LPI. Nakonec osvitová jednotka osvítí tiskovou formu – dnes přímo desku technologií CTP, dříve přes film technologií CTF.“</div>
+</section>
+
+<!-- ============ CO MUSÍŠ UMĚT ============ -->
+<section id="umet">
+  <h2>✅ Co musíš umět</h2>
+  <div class="box y">Odškrtni ✓, co už umíš. Klikni na <b>text</b> → skočíš k učivu.</div>
+  <div class="check" id="checkList"></div>
+</section>
+
+<!-- ============ 1 PREPRESS ============ -->
+<section id="prepress">
+  <h2><span class="num">1</span>Co je prepress</h2>
+  <div class="pin">📌 <b>Prepress</b> = všechno, co se udělá <b>před tiskem</b>. Na konci je hotová <b>tisková forma</b>.</div>
+  <h3 id="p-co">Prepress – press – postpress</h3>
+  <p>Polygrafická výroba má <b>tři části</b>:</p>
+  <div class="grid3">
+    <div class="box m"><h4>🖥️ Prepress</h4><b>Předtisková příprava.</b> Sazba, grafika, kontrola dat, montáž, nátisk, RIP, výroba <b>tiskové formy</b>.</div>
+    <div class="box c"><h4>🖨️ Press</h4><b>Tisk.</b> Tisková forma přenese barvu na papír (ofset, flexotisk, sítotisk…).</div>
+    <div class="box"><h4>✂️ Postpress</h4><b>Dokončující zpracování.</b> Řezání, skládání, vazba, lakování…</div>
+  </div>
+  <div class="box y"><b>Zapamatuj si:</b> prepress <b>končí hotovou tiskovou formou</b> (deskou). Chyba v prepressu = chyba v celém nákladu. Proto je tu tolik <b>kontrol</b>.</div>
+
+  <h3 id="p-kroky">Kroky předtiskové přípravy (workflow)</h3>
+  <p>Klikni na krok. Uvidíš, co se v něm děje.</p>
+  <div class="steps" id="wfSteps"></div>
+  <div class="box c" id="wfOut"></div>
+  <p class="det" style="font-size:.93rem;color:#5d5d66">Celý postup řídí <b>workflow systém</b> (např. Kodak Prinergy, Heidelberg Prinect, Agfa Apogee). Hlídá pořadí kroků a data.</p>
+</section>
+
+<!-- ============ 2 KONTROLA DAT ============ -->
+<section id="kontrola">
+  <h2><span class="num">2</span>Kontrola tiskových dat</h2>
+  <div class="pin">📌 <b>Preflight</b> = kontrola PDF <b>před tiskem</b>. Aby se vytisklo <b>stejně jako grafický návrh</b>.</div>
+  <h3 id="k-co">Preflight – kontrola před výstupem</h3>
+  <p><b>Preflight</b> = <b>předletová kontrola</b>. Jako pilot kontroluje letadlo před startem, my kontrolujeme <b>data před tiskem</b>. Kontrolujeme hlavně <b>tiskové PDF</b> (PDF/X).</p>
+  <p><b>Proč?</b> Aby se PDF vytisklo <b>správně – stejně jako grafický návrh</b>.</p>
+  <div class="box y det">📎 Podrobně o PDF/X a preflightu: lekce <a href="../../digitalni-workflow/pdf-postscript/#preflight" target="_blank" rel="noopener"><b>PostScript a PDF → Preflight</b></a>.</div>
+
+  <h3 id="k-seznam">Co kontrolujeme</h3>
+  <div class="tiles">
+    <div class="tile"><span class="ti">📐</span><b>Formát</b><span class="ok">✓ podle objednávky</span><span class="ko">✗ jiný rozměr</span></div>
+    <div class="tile"><span class="ti">↔️</span><b>Spadávka</b><span class="ok">✓ 3 mm za ořez</span><span class="ko">✗ bílý proužek</span></div>
+    <div class="tile"><span class="ti">🛟</span><b>Bezpečný okraj</b><span class="ok">✓ text 3–5 mm od ořezu</span><span class="ko">✗ text se ořízne</span></div>
+    <div class="tile"><span class="ti">🎨</span><b>Barvy</b><span class="ok">✓ CMYK</span><span class="ko">✗ RGB</span></div>
+    <div class="tile"><span class="ti">🔍</span><b>Rozlišení</b><span class="ok">✓ 300 ppi</span><span class="ko">✗ 72 ppi = kostičky</span></div>
+    <div class="tile"><span class="ti">🟥</span><b>Přímé barvy</b><span class="ok">✓ jen ty potřebné</span><span class="ko">✗ deska navíc</span></div>
+    <div class="tile"><span class="ti">💧</span><b>Množství barvy (TAC)</b><span class="ok">✓ max. 300–330 %</span><span class="ko">✗ nezasychá, obtiskuje</span></div>
+    <div class="tile"><span class="ti">🔤</span><b>Písma</b><span class="ok">✓ vložená v PDF</span><span class="ko">✗ jiné písmo</span></div>
+    <div class="tile"><span class="ti">⚫</span><b>Černý text</b><span class="ok">✓ jen K 100 %</span><span class="ko">✗ text z CMYK</span></div>
+    <div class="tile"><span class="ti">📏</span><b>Tenké linky</b><span class="ok">✓ min. 0,25 pt</span><span class="ko">✗ linka zmizí</span></div>
+    <div class="tile"><span class="ti">🫧</span><b>Průhlednost</b><span class="ok">✓ sloučená nebo podle domluvy</span><span class="ko">✗ chyby v obraze</span></div>
+  </div>
+
+  <h3 id="k-hra">🧪 Vyzkoušej: najdi 6 chyb</h3>
+  <p>Toto je leták před tiskem. <b>Klikni na chyby.</b> Růžová čárkovaná čára = ořez (čistý formát). Šedý okraj = spadávka.</p>
+  <div class="hra">
+    <svg id="hraSvg" viewBox="0 0 300 400" style="max-width:340px">
+      <rect x="8" y="8" width="284" height="384" fill="#f3f3f7"/>
+      <text x="150" y="6" font-size="7" text-anchor="middle" fill="#5d5d66" dy="0">spadávka</text>
+      <rect x="20" y="20" width="260" height="360" fill="#fff"/>
+      <rect x="32" y="8" width="260" height="150" fill="#009fe3"/>
+      <text x="44" y="96" font-size="34" font-weight="900" fill="#fff">VÝSTAVA</text>
+      <rect x="38" y="178" width="104" height="17" fill="#ff9ad5"/>
+      <text x="40" y="191" font-size="12" fill="#1d1d1b">Galerie u nádraží</text>
+      <text x="40" y="212" font-size="12" fill="#1d1d1b">1.–30. června</text>
+      <g><rect x="150" y="176" width="112" height="96" fill="#8a8f99"/>
+        <g fill="#5d6470"><rect x="150" y="176" width="16" height="16"/><rect x="182" y="176" width="16" height="16"/><rect x="214" y="192" width="16" height="16"/><rect x="166" y="208" width="16" height="16"/><rect x="246" y="208" width="16" height="16"/><rect x="198" y="224" width="16" height="16"/><rect x="150" y="240" width="16" height="16"/><rect x="230" y="240" width="16" height="16"/><rect x="182" y="256" width="16" height="16"/></g>
+        <g fill="#b9bec8"><rect x="198" y="176" width="16" height="16"/><rect x="230" y="176" width="16" height="16"/><rect x="150" y="208" width="16" height="16"/><rect x="214" y="224" width="16" height="16"/><rect x="166" y="256" width="16" height="16"/><rect x="246" y="256" width="16" height="16"/></g></g>
+      <circle cx="88" cy="270" r="34" fill="#00ff00"/>
+      <text x="88" y="275" font-size="13" font-weight="900" text-anchor="middle" fill="#1d1d1b">ZDARMA</text>
+      <line x1="40" y1="322" x2="262" y2="322" stroke="#1d1d1b" stroke-width=".25"/>
+      <text x="40" y="377" font-size="11" fill="#1d1d1b">www.galerie-hk.cz</text>
+      <rect x="20" y="20" width="260" height="360" fill="none" stroke="#e6007e" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <g class="hot" data-i="0"><rect x="8" y="8" width="26" height="154" fill="transparent"/></g>
+      <g class="hot" data-i="1"><rect x="148" y="174" width="116" height="100" fill="transparent"/></g>
+      <g class="hot" data-i="2"><circle cx="88" cy="270" r="36" fill="transparent"/></g>
+      <g class="hot" data-i="3"><rect x="36" y="176" width="110" height="21" fill="transparent"/></g>
+      <g class="hot" data-i="4"><rect x="36" y="364" width="140" height="20" fill="transparent"/></g>
+      <g class="hot" data-i="5"><rect x="36" y="314" width="230" height="16" fill="transparent"/></g>
+    </svg>
+    <div><div class="score" id="hraScore">Nalezeno: 0 / 6</div><ol id="hraList" class="keys"></ol>
+    <button onclick="hraReset()">Znovu</button> <button onclick="hraShow()">Ukázat všechny</button></div>
+  </div>
+
+  <h3 id="k-sw">Software pro kontrolu dat</h3>
+  <p>Kontroluji v programu <b>Adobe Acrobat Pro</b> nebo <b>Enfocus PitStop Pro</b> (umí víc nastavení, je i jako doplněk Acrobatu).</p>
+  <div class="grid2 det">
+    <div class="box"><b>Adobe Acrobat Pro</b> → Tisková produkce → <b>Kontrola před výstupem</b> (Preflight). Ukáže separace, krytí barvou, přetisky.</div>
+    <div class="box"><b>Enfocus PitStop</b>, <b>callas pdfToolbox</b> – profesionální kontrola a <b>oprava</b> PDF. <b>InDesign</b> – průběžná kontrola (živý preflight, dole v okně).</div>
+  </div>
+  <p>Výsledek kontroly je <b>protokol</b> (report): ✓ v pořádku, ⚠ varování, ✗ chyba.</p>
+</section>
+
+<!-- ============ 3 MONTÁŽ ============ -->
+<section id="montaz">
+  <h2><span class="num">3</span>Montáž</h2>
+  <div class="pin">📌 <b>Montáž</b> = rozmístím stránky na <b>velký tiskový arch</b>. Po složení jdou stránky <b>za sebou</b>.</div>
+  <h3 id="m-co">Archová (polygrafická) montáž</h3>
+  <p>Tiskový stroj netiskne po jedné stránce. Tiskne na velký <b>tiskový arch</b> (např. B1 = 700 × 1000 mm). <b>Montáž</b> = rozmístění stran nebo výrobků na tiskový arch, včetně <b>tiskových značek</b>.</p>
+  <div class="grid2 det">
+    <div class="box"><h4>✋ Dříve: ruční montáž</h4>Filmy se lepily na <b>montážní fólii</b> (astralon) na <b>prosvětlovacím stole</b>. Pomalé, hrozí chyby.</div>
+    <div class="box m"><h4>💻 Dnes: digitální montáž</h4>Montáž dělá <b>software</b> z PDF. Výsledek je jedno velké PDF celého archu → jde do <b>RIPu</b>.</div>
+  </div>
+  <p><b>Proč montáž?</b> Šetří <b>papír</b>, <b>čas</b> a <b>tiskové desky</b>. Na jeden arch se vejde víc stran nebo víc kusů (např. 8 vizitek vedle sebe = <b>užitky</b>).</p>
+
+  <h3 id="m-vyrazovani">Vyřazování stran</h3>
+  <p><b>Vyřazování</b> = strany knihy nebo časopisu se dají na arch v <b>takovém pořadí a otočení</b>, aby po <b>složení</b> (falcování) archu šly <b>za sebou</b> 1, 2, 3, 4…</p>
+  <figure><svg viewBox="0 0 360 120">
+    <rect x="6" y="20" width="96" height="70" fill="#fff" stroke="#1d1d1b" stroke-width="2"/><path d="M54 20v70M6 55h96" stroke="#1d1d1b" stroke-dasharray="4 3"/>
+    <g font-size="14" font-weight="800" fill="#e6007e" text-anchor="middle"><text x="30" y="48" transform="rotate(180 30 43)">5</text><text x="78" y="48" transform="rotate(180 78 43)">4</text><text x="30" y="80">8</text><text x="78" y="80">1</text></g>
+    <text x="54" y="108" font-size="13" font-weight="700" text-anchor="middle">1. tisk</text>
+    <path d="M110 55h24" stroke="#e6007e" stroke-width="3"/><path d="M130 49l8 6-8 6" fill="#e6007e"/>
+    <rect x="146" y="38" width="48" height="35" fill="#fff" stroke="#1d1d1b" stroke-width="2"/><rect x="150" y="34" width="48" height="35" fill="#fff" stroke="#1d1d1b" stroke-width="2"/>
+    <text x="174" y="108" font-size="13" font-weight="700" text-anchor="middle">2. složím</text>
+    <path d="M206 55h24" stroke="#e6007e" stroke-width="3"/><path d="M226 49l8 6-8 6" fill="#e6007e"/>
+    <path d="M250 26l46-6v74l-46 6z" fill="#fff" stroke="#1d1d1b" stroke-width="2"/><path d="M296 20l46 6v74l-46-6z" fill="#fff" stroke="#1d1d1b" stroke-width="2"/>
+    <g font-size="15" font-weight="800" fill="#009fe3" text-anchor="middle"><text x="273" y="64">2</text><text x="319" y="64">3</text></g>
+    <text x="296" y="114" font-size="13" font-weight="700" text-anchor="middle">3. ořežu</text>
+  </svg><figcaption>Po složení a ořezu jdou strany <b>1–8 za sebou</b>.</figcaption></figure>
+  <p>Příklad: arch se <b>2 lomy</b> = <b>8 stran</b> (4 na lícu, 4 na rubu). Klikni na tlačítko:</p>
+  <div class="btns side-btns"><button class="on" onclick="sideShow(0)">Líc archu</button><button onclick="sideShow(1)">Rub archu</button></div>
+  <div class="imp">
+    <svg id="impSvg" viewBox="0 0 320 240"></svg>
+    <div class="box y" style="margin:0"><b>Všimni si:</b><ul class="keys"><li>Horní řada je <b>vzhůru nohama</b> (hlavami k sobě).</li><li>Strany vedle sebe dávají <b>součet 9</b> (počet stran + 1): 8 + 1, 5 + 4, 2 + 7, 3 + 6.</li><li>Za stranou <b>1</b> je na rubu strana <b>2</b>.</li></ul></div>
+  </div>
+
+  <h3 id="m-maketa">Maketa</h3>
+  <div class="grid2">
+    <figure><svg viewBox="0 0 220 156"><path d="M30 30l70-14v104l-70 14z" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><path d="M100 16l70 14v104l-70-14z" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><text x="58" y="80" font-size="20" font-weight="800" fill="#e6007e">2</text><text x="132" y="80" font-size="20" font-weight="800" fill="#e6007e">3</text><path d="M100 16v104" stroke="#1d1d1b" stroke-width="4"/><text x="110" y="152" font-size="11" fill="#5d5d66" text-anchor="middle">složený papír s čísly stran</text></svg></figure>
+    <div><p><b>Maketa</b> = <b>model</b> budoucí tiskoviny. Papír se složí jako hotový výrobek a <b>očíslují</b> se strany.</p>
+      <ul class="keys"><li>Kontrola <b>pořadí stran</b> a vyřazení.</li><li>Kontrola <b>rozsahu</b> (počet stran) a <b>formátu</b>.</li><li>Zákazník vidí, <b>jak bude výrobek vypadat</b>.</li><li class="det">Pomáhá naplánovat výrobu a spočítat cenu.</li></ul></div>
+  </div>
+  <div class="grid2 det">
+    <div class="box"><h4>📝 Reprodukční maketa</h4>Strany s <b>nalepenými nebo nakreslenými</b> obrázky a texty. Ukazuje <b>rozložení</b> stránek.</div>
+    <div class="box"><h4>📕 Knihařská maketa</h4><b>Prázdná</b> kniha ve <b>skutečné velikosti</b> (1 : 1) z papíru, na který se bude tisknout. Ukazuje <b>tloušťku</b> a <b>vazbu</b>.</div>
+  </div>
+  <div class="vsx">
+    <div><span class="big">📒 Maketa</span><br>pořadí stran, tvar, velikost<br><b class="no">✗ ne barvy!</b></div>
+    <div class="vsmid">×</div>
+    <div><span class="big">🖨️ Nátisk</span><br>obsah, pořadí stran<br><b class="yes">✓ i barvy</b></div>
+  </div>
+
+  <h3 id="m-znacky">Tiskové značky na archu</h3>
+  <figure><svg viewBox="0 0 360 230">
+    <rect x="10" y="10" width="340" height="210" fill="#fff" stroke="#1d1d1b" stroke-width="2"/>
+    <rect x="70" y="50" width="220" height="130" fill="#dff2fc" stroke="#1d1d1b" stroke-dasharray="5 3"/>
+    <text x="180" y="120" font-size="14" font-weight="700" text-anchor="middle">strany / užitky</text>
+    <g stroke="#1d1d1b" stroke-width="2"><path d="M70 28v16M48 50h16M290 28v16M296 50h16M70 186v16M48 180h16M290 186v16M296 180h16"/></g>
+    <g stroke="#1d1d1b" stroke-width="1.5" fill="none"><circle cx="180" cy="30" r="9"/><path d="M168 30h24M180 18v24"/><circle cx="30" cy="115" r="9"/><path d="M18 115h24M30 103v24"/><circle cx="330" cy="115" r="9"/><path d="M318 115h24M330 103v24"/></g>
+    <path d="M180 186v14" stroke="#1d1d1b" stroke-width="2" stroke-dasharray="3 2"/>
+    <g><rect x="100" y="204" width="14" height="12" fill="#009fe3"/><rect x="116" y="204" width="14" height="12" fill="#e6007e"/><rect x="132" y="204" width="14" height="12" fill="#ffd400"/><rect x="148" y="204" width="14" height="12" fill="#1d1d1b"/><rect x="164" y="204" width="14" height="12" fill="#7a7a7a"/><rect x="180" y="204" width="14" height="12" fill="#009fe3" opacity=".5"/><rect x="196" y="204" width="14" height="12" fill="#e6007e" opacity=".5"/><rect x="212" y="204" width="14" height="12" fill="#ffd400" opacity=".5"/><rect x="228" y="204" width="14" height="12" fill="#1d1d1b" opacity=".5"/></g>
+  </svg><figcaption>✂️ ořezové značky (rohy) · ⊕ soutiskové značky · ┆ falcovací (lomová) značka · ▮ kontrolní barevný pruh</figcaption></figure>
+  <ul class="keys">
+    <li><b>Ořezové značky</b> – kde se bude řezat. Jsou <b>mimo</b> čistý formát.</li>
+    <li><b>Soutiskové značky</b> (paserky) – kontrola, že barvy C, M, Y, K <b>sedí na sobě</b> = <b>soutisk</b>.</li>
+    <li><b>Falcovací (lomové) značky</b> – kde se arch skládá.</li>
+    <li><b>Kontrolní barevný pruh</b> (škála) – tiskař podle něj měří a nastavuje <b>sytost barev</b> (denzitu).</li>
+    <li class="det"><b>Hřbetní (kolacionační) značky</b> – podle nich se pozná, že složky knihy jdou ve správném pořadí.</li>
+  </ul>
+
+  <h3 id="m-rub" class="det">Vlastní rub × cizí rub</h3>
+  <div class="grid2 det">
+    <div class="box c"><h4>🔄 Vlastní rub</h4>Líc i rub jsou na <b>jedné sadě desek</b>. Arch se po prvním tisku <b>obrátí</b> a tiskne se znovu stejnými deskami. Z archu jsou pak <b>2 stejné výrobky</b>. Šetří desky.</div>
+    <div class="box m"><h4>🅰️🅱️ Cizí rub</h4>Líc a rub mají <b>každý vlastní sadu desek</b>. Používá se u větších nákladů a u knih (jeden arch = jedna složka).</div>
+  </div>
+
+  <h3 id="m-sw">Software pro montáž</h3>
+  <p>Montáž se dělá ve <b>specializovaném softwaru</b>. Z hotového souboru se vyrobí <b>tisková forma</b>.</p>
+  <div class="grid2 det">
+    <div class="box"><b>Profesionální:</b> Kodak <b>Preps</b>, Heidelberg Prinect <b>Signa Station</b>, Agfa Apogee <b>Impose</b>.</div>
+    <div class="box"><b>Jednodušší:</b> <b>Quite Imposing</b> (doplněk Acrobatu), InDesign → <b>Tisk brožury</b> (malé brožury).</div>
+  </div>
+</section>
+
+<!-- ============ 4 NÁHLED A NÁTISK ============ -->
+<section id="nahled">
+  <h2><span class="num">4</span>Náhled a nátisk</h2>
+  <div class="pin">📌 <b>Náhled</b> = kontrola na <b>monitoru</b>. <b>Nátisk</b> = zkušební tisk na <b>papíře</b> s věrnými barvami.</div>
+  <p>Před tiskem musí <b>zákazník i tiskárna</b> vidět, jak bude tiskovina vypadat. Jinak by se mohl vytisknout celý náklad <b>špatně</b>.</p>
+  <div class="vs">
+    <div class="box c" id="n-nahled"><h4>🖥️ Náhled = soft proof</h4>
+      <svg viewBox="0 0 160 90" style="max-width:160px;display:block;margin:4px auto"><rect x="20" y="6" width="120" height="66" rx="5" fill="#1d1d1b"/><rect x="26" y="12" width="108" height="54" fill="#009fe3"/><circle cx="60" cy="38" r="14" fill="#ffd400"/><path d="M70 72l-8 14h36l-8-14" fill="#1d1d1b"/></svg>
+      <ul class="keys"><li>Na <b>monitoru</b> (obrazovkový nátisk).</li><li>Monitor musí být <b>kalibrovaný</b> (kalibrační <b>sonda</b>).</li><li>Program <b>napodobí tisk</b> podle ICC profilu: InDesign → Zobrazení → <b>Kontrolní nátisk barev</b>.</li><li>Říká se mu i <b>vzdálený náhled</b>: zákazník schvaluje a opravuje <b>on-line</b>.</li><li>✓ rychlý, levný, lze poslat e-mailem. ✗ monitor svítí, papír ne → <b>není závazný</b> na barvy.</li></ul></div>
+    <div class="box m" id="n-natisk"><h4>🖨️ Nátisk = hard proof</h4>
+      <svg viewBox="0 0 160 90" style="max-width:160px;display:block;margin:4px auto"><rect x="40" y="4" width="80" height="82" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><rect x="48" y="12" width="64" height="42" fill="#009fe3"/><circle cx="72" cy="32" r="10" fill="#ffd400"/><g><rect x="48" y="64" width="14" height="12" fill="#009fe3"/><rect x="64" y="64" width="14" height="12" fill="#e6007e"/><rect x="80" y="64" width="14" height="12" fill="#ffd400"/><rect x="96" y="64" width="14" height="12" fill="#1d1d1b"/></g></svg>
+      <ul class="keys"><li>Na <b>papíře</b> – zkušební tisk před nákladem.</li><li>Věrně ukazuje <b>barvy</b> budoucího tisku (podle ICC profilu, např. FOGRA39).</li><li>✓ <b>závazný</b> pro tiskárnu i zákazníka (smluvní nátisk). ✗ dražší, pomalejší.</li></ul></div>
+  </div>
+
+  <h3 id="n-druhy">Druhy nátisků</h3>
+  <div class="ntypes">
+    <div class="nt"><span class="nn">1</span><span class="ti">🏭</span><b>Na tiskovém stroji</b><small>klasický, „mokrý“</small><p>Z <b>tiskové formy</b>, stejným papírem a barvami jako tisk.</p><p class="yes">✓ nejlepší</p><p class="no">✗ velmi drahý</p></div>
+    <div class="nt"><span class="nn">2</span><span class="ti">🎞️</span><b>Analogový</b><small>fotochemický</small><p>Z <b>filmů</b> a práškových barev. Např. <b>Cromalin</b> („udělejte mi kromalin“).</p><p class="no">✗ dnes skoro ne</p></div>
+    <div class="nt"><span class="nn">3</span><span class="ti">💧</span><b>Digitální</b><small>inkoustová tiskárna</small><p>Rovnou z <b>PDF</b>. Tiskárna je <b>kalibrovaná</b> a má <b>ICC profil</b>.</p><p class="yes">✓ rychlý, levný</p></div>
+    <div class="nt"><span class="nn">4</span><span class="ti">✅</span><b>Certifikovaný digitální</b><small>změřený</small><p>Digitální nátisk změřený <b>spektrofotometrem</b>. Barvy jsou podle normy.</p><p class="yes">✓ závazný</p></div>
+  </div>
+  <p class="det"><b>📐 Polohový (montážní) nátisk</b> – vytiskne se celý arch a složí se. Kontroluje se <b>pořadí stran</b>, ne barvy (dříve <b>ozalit</b>).</p>
+
+  <h3 id="n-cert">Certifikovaný digitální nátisk</h3>
+  <div class="grid2">
+    <figure><svg viewBox="0 0 240 150"><rect x="20" y="6" width="200" height="138" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><rect x="32" y="16" width="176" height="74" fill="#e6007e" opacity=".75"/><circle cx="90" cy="52" r="22" fill="#ffd400"/><g id="wedge"></g><rect x="32" y="122" width="120" height="16" fill="#f3f3f7" stroke="#1d1d1b"/><text x="36" y="134" font-size="8">✓ FOGRA39 · ΔE OK · 13. 11.</text></svg><figcaption>nahoře obraz · dole kontrolní proužek · štítek s výsledkem</figcaption></figure>
+    <div><p><b>Certifikovaný nátisk</b> = barvy jsou <b>změřené</b> přístrojem a <b>odpovídají normě</b> pro ofset (ISO 12647-7).</p>
+      <ul class="keys"><li>Na okraji je <b>kontrolní proužek</b> (např. FOGRA Media Wedge) – barevná políčka.</li><li>Políčka změří <b>spektrofotometr</b>.</li><li>Odchylka barev <b>ΔE</b> (delta E) musí být v <b>toleranci</b>.</li><li>Výsledek je na <b>štítku</b>: profil, datum, ✓ vyhověl.</li></ul></div>
+  </div>
+
+  <h3 id="n-svetlo">Světlo D50 – kde se nátisk hodnotí</h3>
+  <p>Barva vypadá při různém světle <b>jinak</b>. Nátisk i tisk se proto porovnávají pod <b>normovaným světlem D50</b> (5000 K, „denní světlo“) v <b>prohlížecím boxu</b> (norma ISO 3664).</p>
+  <div class="btns light-btns"><button class="on" onclick="lightShow(0)">☀️ D50</button><button onclick="lightShow(1)">💡 žárovka</button><button onclick="lightShow(2)">🏢 zářivka</button></div>
+  <div class="sw" id="lightSw"></div>
+  <p id="lightMsg" style="font-size:.95rem"></p>
+
+  <h3 id="n-imprimatur">Imprimatur</h3>
+  <div class="box y"><p class="big" style="margin:0">✍️ Imprimatur = „ať se tiskne“ (latinsky).</p>Zákazník <b>zkontroluje nátisk</b> a <b>podepíše</b> ho. Tím ho <b>schválí</b> k tisku. Za chyby, které zákazník přehlédl, už tiskárna <b>neodpovídá</b>.</div>
+</section>
+
+<!-- ============ 5 RIP ============ -->
+<section id="rip">
+  <h2><span class="num">5</span>RIP a jeho nastavení</h2>
+  <div class="pin">📌 <b>RIP</b> = program, který změní PDF na <b>tiskové body</b>. Každou barvu C, M, Y, K zvlášť.</div>
+  <h3 id="r-co">Co je RIP</h3>
+  <div class="box m"><p class="big" style="margin:0">RIP = <b>R</b>aster <b>I</b>mage <b>P</b>rocessor</p>Program (nebo počítač), který převede <b>text, obrázky a grafiku</b> z PDF na <b>tiskové body</b>. Vznikne mapa bodů: bod <b>je</b> / bod <b>není</b> (bitmapa). Tu potom osvitová jednotka osvítí. Převodu se říká <b>ripování</b>.</div>
+  <ul class="keys">
+    <li><b>Softwarový RIP</b> – program na běžném počítači (dnes nejčastější).</li>
+    <li><b>RIP v tiskárně</b> – je součástí laserové nebo inkoustové tiskárny.</li>
+    <li><b>Samostatné zařízení</b> – vlastní počítač jen pro RIP.</li>
+    <li class="det">Jádro RIPu: <b>Adobe PDF Print Engine</b> (zpracuje PDF přímo) nebo <b>Harlequin RIP</b>. RIP je součástí workflow (Prinergy, Prinect, Apogee).</li>
+  </ul>
+
+  <h3 id="r-kroky">Co RIP dělá – 3 kroky</h3>
+  <div class="grid3">
+    <div class="box"><h4>1 · 📖 Přečte</h4>Přečte PDF a <b>pozná</b>, co je na stránce: texty, obrázky, barvy. <small class="det">(odborně: interpretace)</small></div>
+    <div class="box"><h4>2 · ✂️ Rozdělí barvy</h4>Rozdělí obraz na <b>C, M, Y, K</b> (+ přímé barvy) = <b>separace</b>. <small class="det">(odborně: rendering)</small></div>
+    <div class="box"><h4>3 · ⚫ Udělá body</h4>Odstíny změní na <b>tiskové body</b>: velké = tmavé, malé = světlé. <small class="det">(odborně: rastrování; výsledek je 1bitový soubor, např. TIFF-B)</small></div>
+  </div>
+  <figure><svg viewBox="0 0 400 120">
+    <path d="M10 30h46l14 14v62H10z" fill="#fff" stroke="#d62d20" stroke-width="3"/><text x="18" y="76" font-size="14" font-weight="800" fill="#d62d20">PDF</text>
+    <path d="M76 70h22" stroke="#1d1d1b" stroke-width="3"/>
+    <rect x="102" y="44" width="70" height="52" rx="10" fill="#009fe3"/><text x="122" y="76" font-size="17" font-weight="800" fill="#fff">RIP</text>
+    <path d="M176 70h22" stroke="#1d1d1b" stroke-width="3"/>
+    <g font-size="12" font-weight="800" fill="#fff"><rect x="206" y="10" width="44" height="44" fill="#009fe3"/><text x="223" y="37">C</text><rect x="256" y="10" width="44" height="44" fill="#e6007e"/><text x="272" y="37">M</text><rect x="206" y="62" width="44" height="44" fill="#ffd400"/><text x="223" y="89" fill="#1d1d1b">Y</text><rect x="256" y="62" width="44" height="44" fill="#1d1d1b"/><text x="273" y="89">K</text></g>
+    <path d="M306 58h22" stroke="#1d1d1b" stroke-width="3"/>
+    <rect x="332" y="30" width="60" height="56" rx="6" fill="#c9ced6" stroke="#1d1d1b" stroke-width="2"/><text x="340" y="62" font-size="11" font-weight="700">4 desky</text>
+  </svg><figcaption>Z jednoho PDF vzniknou 4 výtažky → 4 tiskové desky</figcaption></figure>
+
+  <h3 id="r-nastaveni">Nastavení RIPu</h3>
+  <p>Ve RIPu se nastavuje, <b>jak</b> se data převedou na body. Nejdůležitější:</p>
+  <div class="tablewrap"><table>
+    <tr><th>Nastavení</th><th>Co to je</th><th>Příklad</th></tr>
+    <tr><td>🔍 <b>Rozlišení osvitu (DPI)</b></td><td>kolik laserových bodů na palec</td><td>2400 dpi</td></tr>
+    <tr><td>📏 <b>Hustota rastru (LPI)</b></td><td>kolik řad tiskových bodů na palec (lineatura)</td><td>150 lpi = 60 l/cm</td></tr>
+    <tr><td>🔳 <b>Typ rastru</b></td><td>AM, FM nebo hybridní</td><td>AM pro běžný ofset</td></tr>
+    <tr><td>⚫ <b>Tvar bodu</b></td><td>tvar rastrového bodu</td><td>kruhový, eliptický, čtvercový</td></tr>
+    <tr><td>📐 <b>Úhly rastru</b></td><td>natočení rastru každé barvy</td><td>C 15°, M 75°, Y 0°, K 45°</td></tr>
+    <tr><td>📈 <b>Kalibrační křivka</b></td><td>body se v tisku rozpijí → RIP je předem zmenší</td><td>50 % v datech → 46 % na desce</td></tr>
+    <tr><td>🎨 <b>Separace, přímé barvy</b></td><td>které barvy dostanou desku</td><td>CMYK + PANTONE 485</td></tr>
+    <tr><td>🧩 <b>Trapping (přesahy)</b></td><td>barvy se nepatrně překryjí → nevzniknou bílé mezery</td><td>0,1 mm</td></tr>
+    <tr><td>⚫ <b>Přetisk černé</b></td><td>černý text se tiskne přes barvu pod ním</td><td>K 100 % přetisk</td></tr>
+    <tr class="det"><td>🎞️ <b>Výstup</b></td><td>médium a jeho velikost, u filmu <b>negativ/pozitiv</b> a <b>zrcadlení</b></td><td>deska 1030 × 790 mm</td></tr>
+  </table></div>
+
+  <h3 id="r-trap">🧪 Trapping – vyzkoušej</h3>
+  <p>Při tisku se papír trochu <b>posune</b>. Barvy pak nesedí přesně na sobě = <b>nepřesný soutisk</b>. Vznikne <b>bílá mezera</b>.</p>
+  <div class="btns trap-btns"><button class="on" onclick="trap(0)">✓ Přesně</button><button onclick="trap(1)">↔️ Posun papíru</button><button onclick="trap(2)">🧩 Posun + trapping</button></div>
+  <div class="trapbox"><svg id="trapSvg" viewBox="0 0 240 120"></svg><p id="trapMsg"></p></div>
+
+  <h3 id="r-rastr">🔍 Tiskový rastr pod lupou</h3>
+  <p>Vytištěný obrázek je složený z <b>malých tiskových bodů</b>. Oko je nerozezná. <b>Posuň lupu</b> po přechodu:</p>
+  <div class="lupa"><svg id="lupaSvg" viewBox="0 0 320 130"></svg>
+    <input type="range" id="lupaR" min="0" max="100" value="30" style="width:100%"><p id="lupaMsg"></p></div>
+
+  <h3 id="r-am-fm">AM × FM rastr</h3>
+  <div class="grid2">
+    <div class="box"><h4>AM rastr = mění se <u>velikost</u> bodů</h4><svg id="amSvg" viewBox="0 0 200 80" style="width:100%"></svg>Body jsou <b>stejně daleko</b> od sebe. Tmavé místo = <b>velké body</b>. Klasický rastr. <small class="det">(odborně: amplitudově modulovaný)</small></div>
+    <div class="box"><h4>FM rastr = mění se <u>počet</u> bodů</h4><svg id="fmSvg" viewBox="0 0 200 80" style="width:100%"></svg>Body jsou <b>stejně malé</b>. Tmavé místo = <b>víc bodů</b> blízko sebe. Nevzniká <b>moaré</b>. <small class="det">(odborně: frekvenčně modulovaný, stochastický)</small></div>
+  </div>
+  <p class="det"><b>Hybridní rastr</b> (XM) spojuje obojí: ve středních tónech AM, ve světlech a stínech FM.</p>
+
+  <h3 id="r-uhly">Úhly rastru a moaré</h3>
+  <p>Body barev se <b>nesmí</b> překrývat celé. Proto má každá barva rastr <b>natočený jinak</b>. Když jsou úhly špatně, vznikne <b>moaré</b> – rušivý vzor („kostkování, vlnky“). Posuň jezdec:</p>
+  <div class="moire">
+    <svg id="moSvg" viewBox="0 0 200 200"></svg>
+    <div><label><b>Rozdíl úhlů: <span id="moVal">30°</span></b><br><input type="range" id="moR" min="0" max="45" value="30" style="width:100%"></label>
+      <p id="moMsg"></p>
+      <div class="box y" style="margin:6px 0"><b>Pravidlo:</b> výrazné barvy (C, M, K) mají mezi sebou <b>30°</b>. <b>Žlutá</b> je málo vidět → je jen <b>15°</b> od sousední. <b>Černá</b> je nejvíc vidět → <b>45°</b> (oko to vnímá nejméně).</div>
+      <p class="det" style="font-size:.88rem;color:#5d5d66">Pozn.: tiskárny používají i jiné rozložení úhlů (např. C 75°, M 15°). Rozdíl 30° ale platí vždy.</p></div>
+  </div>
+
+  <h3 id="r-krivka">Kalibrační křivka a nárůst tiskového bodu</h3>
+  <div class="grid2">
+    <figure><svg viewBox="0 0 200 180"><rect x="30" y="10" width="160" height="140" fill="#fff" stroke="#1d1d1b"/><path d="M30 150L190 10" stroke="#9aa0a6" stroke-width="2" stroke-dasharray="5 4"/><path d="M30 150C80 70 130 30 190 10" stroke="#d62d20" stroke-width="3" fill="none"/><path d="M30 150C100 120 140 60 190 10" stroke="#1a9b4b" stroke-width="3" fill="none"/><text x="34" y="168" font-size="10">0 %</text><text x="160" y="168" font-size="10">100 %</text><text x="36" y="26" font-size="10" fill="#d62d20">tisk bez korekce</text><text x="106" y="128" font-size="10" fill="#1a9b4b">korekce v RIPu</text><text x="94" y="178" font-size="10" fill="#5d5d66">hodnota v datech</text></svg></figure>
+    <div><p>V tisku se barva do papíru <b>rozpije</b>. Body jsou <b>větší</b> než v datech. Obraz <b>ztmavne</b>. Říká se tomu <b>nárůst tiskového bodu</b>.</p>
+      <p>RIP proto body předem <b>zmenší</b>. Řídí se <b>kalibrační křivkou</b>. Po tisku je obraz správně světlý.</p>
+      <p class="det" style="font-size:.93rem">Linearizace = nastavení, aby osvitová jednotka osvítila přesně to, co je v datech (např. 50 % = 50 %).</p></div>
+  </div>
+</section>
+
+<!-- ============ 6 DPI LPI ============ -->
+<section id="dpi">
+  <h2><span class="num">6</span>DPI, LPI (a PPI)</h2>
+  <div class="pin">📌 <b>DPI</b> = laserové body (2400). <b>LPI</b> = hustota rastru (150). Jeden tiskový bod = mřížka <b>16 × 16</b> laserových bodů.</div>
+  <h3 id="d-pojmy">Co je co</h3>
+  <div class="grid3">
+    <div class="box c"><h4>DPI</h4><b>dots per inch</b> = body na palec. Kolik <b>laserových bodů</b> udělá osvitová jednotka na 1 palec. <br>Příklad: <b>2400 dpi</b>.</div>
+    <div class="box m"><h4>LPI</h4><b>lines per inch</b> = řádky na palec = <b>hustota rastru</b> (lineatura). Kolik řad <b>tiskových bodů</b> je na palec. <br>Příklad: <b>150 lpi</b> (= 60 l/cm).</div>
+    <div class="box"><h4>PPI</h4><b>pixels per inch</b> = pixely na palec. Rozlišení <b>obrázku</b> (fotky). <br>Příklad: <b>300 ppi</b>.</div>
+  </div>
+  <div class="box y"><b>1 palec (inch) = 2,54 cm.</b> Proto: lpi : 2,54 = l/cm. Příklad: 150 : 2,54 ≈ <b>60 l/cm</b>.</div>
+  <figure><svg viewBox="0 0 380 140">
+    <rect x="10" y="10" width="120" height="120" fill="#fff" stroke="#1d1d1b"/>
+    <g id="dpiGrid"></g>
+    <text x="142" y="44" font-size="15" font-weight="800" fill="#009fe3">▪ laserový bod (DPI)</text>
+    <text x="142" y="74" font-size="15" font-weight="800" fill="#e6007e">◻ mřížka (LPI)</text>
+    <text x="142" y="104" font-size="15" font-weight="800" fill="#1d1d1b">● tiskový bod</text>
+  </svg><figcaption>Tiskový bod je jako mřížka z mnoha laserových bodů.</figcaption></figure>
+
+  <h3 id="d-lpi">Jakou hustotu rastru (LPI) zvolit?</h3>
+  <p>Záleží na: <b>tiskové technice</b>, <b>papíru</b>, <b>kvalitě</b> a <b>vzdálenosti</b>, ze které se na tiskovinu díváme. Posuň jezdec:</p>
+  <div class="lpi">
+    <svg id="lpiSvg" viewBox="0 0 200 200"></svg>
+    <div><label><b>Hustota rastru: <span id="lpiVal">150</span> lpi</b> (<span id="lpiCm">59</span> l/cm)<br><input type="range" id="lpiR" min="0" max="4" value="2" style="width:100%"></label><p id="lpiMsg"></p></div>
+  </div>
+  <div class="tablewrap"><table>
+    <tr><th>Tiskovina</th><th>LPI</th></tr>
+    <tr><td>🪧 billboard</td><td>30</td></tr>
+    <tr><td>👕 sítotisk</td><td>36–65</td></tr>
+    <tr><td>🖨️ laserová tiskárna</td><td>65</td></tr>
+    <tr><td>📰 noviny (savý papír)</td><td>85–100</td></tr>
+    <tr><td>📘 knihy, letáky, časopisy</td><td>133–150</td></tr>
+    <tr><td>🖼️ kvalitní katalogy</td><td>175</td></tr>
+    <tr class="det"><td>🔩 hlubotisk</td><td>až 300</td></tr>
+  </table></div>
+  <h3 id="d-dalka">👀 Z dálky body nevidíš</h3>
+  <p>Billboard má <b>hrubý rastr</b> (30 lpi). Zblízka vidíš velké body. <b>Z dálky</b> splynou v obraz.</p>
+  <div class="dalka"><div><svg id="nearSvg" viewBox="0 0 120 120"></svg><b>zblízka</b></div><div><svg id="farSvg" viewBox="0 0 120 120"></svg><b>z dálky</b></div></div>
+
+  <h3 id="d-bunka">Tiskový bod = mřížka laserových bodů</h3>
+  <p>Tiskový bod je <b>mřížka laserových bodů</b>. Bod roste od středu. Čím víc černých laserových bodů, tím <b>tmavší</b> tón. Vyber DPI a posuň <b>tón</b>:</p>
+  <div class="cell">
+    <svg id="cellSvg" viewBox="0 0 160 160"></svg>
+    <div>
+      <div class="btns cell-btns"><button onclick="cellDpi(1200)">1200 dpi</button><button class="on" onclick="cellDpi(2400)">2400 dpi</button></div>
+      <label><b>Tón: <span id="cellVal">40</span> %</b><br><input type="range" id="cellR" min="0" max="100" value="40" style="width:100%"></label>
+      <p id="cellMsg"></p></div>
+  </div>
+
+  <h3 id="d-vypocet">🧮 Výpočet: kolik odstínů šedi vytiskneme?</h3>
+  <div class="box y"><b>Vzorec:</b> počet odstínů = ( <b>DPI : LPI</b> )² + 1 <br><span style="font-size:.92rem">„+ 1“ je bílá (prázdná buňka). Pro hladký přechod potřebujeme aspoň <b>256 odstínů</b> (tolik umí PostScript a PDF).</span></div>
+  <div class="calc">
+    <label>DPI <select id="cDpi"><option>600</option><option>1200</option><option selected>2400</option><option>3600</option></select></label>
+    <label>LPI <select id="cLpi"><option>85</option><option>100</option><option>133</option><option selected>150</option><option>175</option><option>200</option><option>300</option></select></label>
+  </div>
+  <div class="steps-calc" id="calcOut"></div>
+  <div class="grad" id="gradOut"></div>
+  <p style="font-size:.92rem;color:#5d5d66" id="gradMsg"></p>
+  <div class="box"><b>Opačně: jakou nejvyšší LPI můžu použít?</b> Aby bylo 256 odstínů, musí být DPI : LPI = <b>16</b> (16 × 16 = 256).<br>Krok 1: LPI = DPI : 16<br>Krok 2: 2400 : 16 = <b>150 lpi</b> ✓</div>
+
+  <h3 id="d-ppi">🧮 Výpočet: jaké rozlišení má mít obrázek (PPI)?</h3>
+  <div class="box y"><b>Pravidlo:</b> PPI = LPI × <b>2</b> (stačí i × 1,5). Číslu 2 se říká <b>faktor kvality</b>.</div>
+  <div class="calc"><label>LPI <select id="pLpi"><option>85</option><option>100</option><option>133</option><option selected>150</option><option>175</option></select></label></div>
+  <div class="steps-calc" id="ppiOut"></div>
+</section>
+
+<!-- ============ 7 TISKOVÁ FORMA ============ -->
+<section id="forma">
+  <h2><span class="num">7</span>Zhotovení tiskové formy</h2>
+  <div class="pin">📌 <b>Tisková forma</b> nese obraz pro tisk. V ofsetu je to <b>hliníková deska</b>. 1 barva = 1 deska.</div>
+  <h3 id="f-co">Co je tisková forma</h3>
+  <p><b>Tisková forma</b> nese <b>obraz</b>, který se při tisku přenáší na papír. Má <b>tisknoucí</b> místa (berou barvu) a <b>netisknoucí</b> místa (barvu neberou).</p>
+  <div class="tablewrap"><table>
+    <tr><th>Tisková technika</th><th>Tisková forma</th></tr>
+    <tr><td>ofset (tisk z plochy)</td><td><b>hliníková deska</b> s citlivou vrstvou</td></tr>
+    <tr><td>flexotisk (tisk z výšky)</td><td><b>fotopolymerní</b> deska nebo návlek</td></tr>
+    <tr><td>hlubotisk (tisk z hloubky)</td><td>měděný <b>válec</b> s rytými jamkami</td></tr>
+    <tr><td>sítotisk (průtisk)</td><td><b>síto</b> s šablonou</td></tr>
+    <tr><td>digitální tisk</td><td><b>žádná pevná forma</b> – obraz se tvoří znovu pro každý list</td></tr>
+  </table></div>
+  <div class="box y"><b>Každá barva = jedna tisková forma.</b> Tisk CMYK = 4 desky. Přímá barva = deska navíc.</div>
+
+  <h3 id="f-desky">Ofsetové desky</h3>
+  <figure><svg viewBox="0 0 360 120">
+    <rect x="20" y="70" width="320" height="18" fill="#c9ced6" stroke="#1d1d1b"/><text x="26" y="83" font-size="11">hliník (zrněný, eloxovaný)</text>
+    <rect x="70" y="64" width="70" height="6" fill="#2e7d32"/><rect x="200" y="64" width="100" height="6" fill="#2e7d32"/>
+    <path d="M105 62v-18M250 62v-18" stroke="#2e7d32" stroke-width="2"/>
+    <text x="72" y="38" font-size="11" font-weight="700" fill="#2e7d32">tisknoucí místa (berou barvu)</text>
+    <text x="150" y="110" font-size="11" fill="#009fe3" font-weight="700">netisknoucí místo (bere vodu)</text>
+    <path d="M160 100v-40" stroke="#009fe3" stroke-width="2"/>
+  </svg><figcaption>Ofsetová deska: tisknoucí i netisknoucí místa jsou ve stejné rovině (tisk z plochy).</figcaption></figure>
+  <ul class="keys">
+    <li><b>Termální desky</b> – osvit <b>infračerveným laserem</b> (830 nm). Teplo změní vrstvu. Dnes nejčastější, můžou být ve světle.</li>
+    <li class="det"><b>Fialové (violet) desky</b> – osvit <b>fialovým laserem</b> (405 nm). Rychlé, pracuje se při žlutém světle.</li>
+    <li><b>Bezprocesové desky</b> – <b>bez vyvolávání</b> v chemii. Vyvolají se až v tiskovém stroji. Ekologické.</li>
+    <li class="det"><b>Konvenční (UV) desky</b> – dříve kopírování přes <b>film</b> (CTF), dnes i přímý UV osvit (CTcP).</li>
+  </ul>
+  <div class="box"><b>Postup výroby desky (CTP):</b> osvit laserem → (vyvolání) → oplach a <b>konzervace</b> (gumování) → kontrola (denzitometr, lupa) → ohnutí okrajů → <b>do tiskového stroje</b>.</div>
+</section>
+
+<!-- ============ 8 OSVIT ============ -->
+<section id="osvit">
+  <h2><span class="num">8</span>Osvit a osvitové jednotky (CTF, CTP)</h2>
+  <div class="pin">📌 <b>CTF</b> = z počítače <b>na film</b>, pak na desku (starší). <b>CTP</b> = z počítače <b>rovnou na desku</b> (dnes).</div>
+  <p><b>Osvit</b> = <b>laser</b> zapíše text a obrázky na <b>film</b> nebo na <b>desku</b>. Dělá to <b>osvitová jednotka</b> („osvitka“) ve vysokém rozlišení (2400 dpi).</p>
+  <div class="btns ct-btns"><button class="on" onclick="ctShow(0)">CTF – přes film</button><button onclick="ctShow(1)">CTP – přímo deska</button></div>
+  <div class="chain" id="ctChain"></div>
+  <p id="ctMsg" class="big"></p>
+
+  <h3 id="o-ctf">CTF – Computer to Film</h3>
+  <p>„<b>Z počítače na film</b>.“ Osvitová jednotka (<b>imagesetter</b>) osvítí <b>film</b> – průsvitnou fólii. Pro každou barvu jeden film. Starší a pomalejší způsob.</p>
+  <ol class="keys"><li>RIP → osvit <b>filmu</b> laserem</li><li>vyvolání filmu (vyvolávací automat, chemie)</li><li>kontrola filmu (<b>denzitometr</b>)</li><li><b>montáž filmů</b> na montážní fólii (astralon)</li><li><b>kopírování</b> filmu na desku UV světlem ve vakuovém kopírovacím rámu</li><li>vyvolání desky → tisk</li></ol>
+  <p class="det" style="font-size:.93rem">U jednoduchých tiskovin se místo filmu použije i <b>pauzovací (průsvitný) papír</b> vytištěný na laserové tiskárně.</p>
+  <p style="font-size:.93rem">Dnes se CTF používá hlavně u <b>sítotisku</b>, <b>tampontisku</b> nebo starších provozů.</p>
+
+  <h3 id="o-ctp">CTP – Computer to Plate</h3>
+  <p>„<b>Z počítače na desku</b>.“ Osvitová jednotka (<b>platesetter</b>) osvítí <b>přímo tiskovou desku</b>. Film <b>není</b>.</p>
+  <ol class="keys"><li>RIP → osvit <b>desky</b> laserem</li><li>(vyvolání desky) → tisk</li></ol>
+
+  <h3 id="o-srovnani">CTF × CTP</h3>
+  <div class="tablewrap"><table>
+    <tr><th></th><th>CTF</th><th>CTP</th></tr>
+    <tr><td>počet kroků</td><td class="no">mnoho</td><td class="yes">málo</td></tr>
+    <tr><td>film a jeho chemie</td><td class="no">ano</td><td class="yes">ne</td></tr>
+    <tr><td>kvalita bodu</td><td>ztráty při kopírování</td><td class="yes">ostrý bod, přesný soutisk</td></tr>
+    <tr><td>rychlost</td><td class="no">pomalé</td><td class="yes">rychlé</td></tr>
+    <tr><td>chyby (prach, škrábance)</td><td class="no">časté</td><td class="yes">méně</td></tr>
+    <tr><td>cena zařízení</td><td class="yes">nižší</td><td class="no">vysoká</td></tr>
+    <tr><td>oprava chyby</td><td>vymění se jen jeden film</td><td class="no">nová deska</td></tr>
+  </table></div>
+
+  <h3 id="o-jednotky">Osvitové jednotky – konstrukce</h3>
+  <p>Deska je v osvitové jednotce: <b>na bubnu zvenku</b> (vnější buben), <b>uvnitř bubnu</b> (vnitřní buben), nebo <b>leží naplocho</b> (plochá).</p>
+  <div class="grid3 det">
+    <div class="box"><svg viewBox="0 0 140 100" style="width:100%;max-width:170px;display:block;margin:0 auto"><circle cx="70" cy="50" r="38" fill="#c9ced6" stroke="#1d1d1b" stroke-width="3"/><path d="M38 30a38 38 0 0 1 64 0" stroke="#2e7d32" stroke-width="6" fill="none"/><path d="M118 20l-30 22" stroke="#d62d20" stroke-width="3"/><rect x="112" y="12" width="20" height="12" fill="#1d1d1b"/></svg><h4>Vnější buben</h4>Deska je <b>na povrchu</b> otáčejícího se bubnu. Laserová hlava (mnoho diod) jede podél. Hlavně <b>termální</b> CTP.</div>
+    <div class="box"><svg viewBox="0 0 140 100" style="width:100%;max-width:170px;display:block;margin:0 auto"><path d="M30 86A42 42 0 1 1 110 86" fill="none" stroke="#1d1d1b" stroke-width="4"/><path d="M36 80A36 36 0 1 1 104 80" fill="none" stroke="#2e7d32" stroke-width="5"/><path d="M40 52h60" stroke="#1d1d1b" stroke-width="2"/><rect x="62" y="46" width="14" height="12" fill="#1d1d1b"/><path d="M76 52l18-26" stroke="#d62d20" stroke-width="3"/></svg><h4>Vnitřní buben</h4>Deska je <b>uvnitř</b> nehybného půlválce. Uprostřed se otáčí <b>zrcadlo</b> s laserem. Typické pro <b>fialové</b> CTP a osvit filmů.</div>
+    <div class="box"><svg viewBox="0 0 140 100" style="width:100%;max-width:170px;display:block;margin:0 auto"><rect x="10" y="62" width="120" height="16" fill="#c9ced6" stroke="#1d1d1b" stroke-width="2"/><rect x="14" y="58" width="112" height="6" fill="#2e7d32"/><rect x="60" y="14" width="20" height="14" fill="#1d1d1b"/><path d="M70 28l-26 30M70 28l26 30" stroke="#d62d20" stroke-width="2"/></svg><h4>Plochá (flatbed)</h4>Deska <b>leží</b>. Laserový paprsek ji přejíždí pomocí zrcadla. Např. pro <b>noviny</b>.</div>
+  </div>
+  <p class="det">Výrobci CTP: <b>Kodak</b> (Trendsetter, Magnus), <b>Heidelberg</b> (Suprasetter), <b>Screen</b> (PlateRite), <b>Agfa</b>. Velké CTP mají <b>zakladač desek</b> (autoloader) – osvítí desky samy.</p>
+
+  <h3 id="o-dalsi">Další technologie „Computer to…“</h3>
+  <div class="box ext">➕ <b>Rozšiřující učivo</b> – pro srovnání</div>
+  <ul class="keys">
+    <li><b>CTPress</b> (Computer to Press) – deska se vyrobí <b>přímo v tiskovém stroji</b>. Stroje se jmenují <b>DI</b> (Direct Imaging). Nevýhoda: velmi drahý stroj.</li>
+    <li><b>CTPrint</b> (Computer to Print) – <b>digitální tisk</b>, žádná pevná tisková forma.</li>
+    <li><b>CTS</b> (Computer to Screen) – „z počítače na síto“. Na síto se natiskne <b>vosk</b>, síto se osvítí a vymyje. Bez filmu.</li>
+    <li><b>CTcP</b> (Computer to conventional Plate) – <b>UV</b> osvit levnějších konvenčních desek.</li>
+  </ul>
+</section>
+
+<!-- ============ SLOVNÍČEK ============ -->
+<section id="slovnicek">
+  <h2>📖 Slovníček pojmů</h2>
+  <div class="box y"><b>🤟</b> = pojem je ve <a href="https://slovnik.neslhk.com/" target="_blank" rel="noopener"><b>slovníku pro neslyšící</b></a> (video ve znakovém jazyce). <b>↑</b> = kde je pojem v lekci.</div>
+  <input type="search" id="glQ" placeholder="🔍 Hledat pojem…" oninput="renderGl()" style="width:100%;font:inherit;padding:9px 12px;border:2px solid #1d1d1b;border-radius:10px;margin:6px 0 10px">
+  <div class="gl" id="glList"></div>
+</section>
+
+<!-- ============ KARTIČKY ============ -->
+<section id="karticky">
+  <h2>🃏 Otočné kartičky</h2>
+  <div class="box y">Podívej se na <b>pojem</b> → řekni, co znamená → <b>klikni</b> a zkontroluj se.</div>
+  <div class="btns"><button onclick="shuffleCards()">🔀 Zamíchat</button><button onclick="resetCards()">↩️ Otočit zpět</button></div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<!-- ============ KVÍZ ============ -->
+<section id="kviz">
+  <h2>✅ Kvíz</h2>
+  <div class="btns"><button onclick="buildQuiz()">🔀 Nový kvíz</button></div>
+  <div id="quiz"></div>
+  <p class="score" id="score"></p>
+</section>
+
+<!-- ============ PSANÍ ============ -->
+<section id="psani">
+  <h2>✍️ Napiš vlastními slovy</h2>
+  <div class="box y"><b>Napiš</b> odpověď → klikni <b>Zkontrolovat</b>. Uvidíš, co máš ✓ a co chybí ✗.</div>
+  <div id="writing"></div>
+</section>
+
+</main>
+<button id="back" onclick="goBack()" aria-label="Zpět"><span>↑<small id="backLbl">MAPA</small></span></button>
+<footer>Reprodukční grafik pro média · VOŠ, SŠ, ZŠ a MŠ Hradec Králové · materiál pro výuku</footer>
+
+<script>
+/* ---------- návrat zpět ---------- */
+let backPos=null;
+function bindMl(root){(root||document).querySelectorAll('a.ml').forEach(a=>{if(a.dataset.b)return;a.dataset.b=1;a.addEventListener('click',()=>{backPos=window.scrollY;});});}
+const backBtn=document.getElementById('back');
+window.addEventListener('scroll',()=>{backBtn.style.display=window.scrollY>500?'flex':'none';
+  document.getElementById('backLbl').textContent=backPos!==null?'ZPĚT':'MAPA';});
+function goBack(){if(backPos!==null){window.scrollTo({top:backPos,behavior:'smooth'});backPos=null;}else{document.getElementById('mapa').scrollIntoView({behavior:'smooth'});}}
+
+/* ---------- co musíš umět ---------- */
+const CH=[
+ ['Vysvětlit, co je <b>prepress</b> a kde je ve výrobě (prepress – press – postpress).','#p-co'],
+ ['Popsat <b>kroky</b> předtiskové přípravy (workflow).','#p-kroky'],
+ ['Vyjmenovat, co <b>kontrolujeme</b> v tiskových datech.','#k-seznam'],
+ ['Vysvětlit <b>preflight</b> a říct, v jakém <b>softwaru</b> se dělá.','#k-sw'],
+ ['Vysvětlit <b>montáž</b> a <b>vyřazování stran</b>.','#m-vyrazovani'],
+ ['Vysvětlit, co je <b>maketa</b> a k čemu je.','#m-maketa'],
+ ['Popsat <b>tiskové značky</b> na archu.','#m-znacky'],
+ ['Rozlišit <b>náhled</b> (soft proof) a <b>nátisk</b> (hard proof).','#n-nahled'],
+ ['Vyjmenovat <b>druhy nátisků</b>.','#n-druhy'],
+ ['Vysvětlit <b>certifikovaný nátisk</b>, světlo <b>D50</b> a <b>imprimatur</b>.','#n-cert'],
+ ['Vysvětlit, co je <b>RIP</b> a co dělá.','#r-kroky'],
+ ['Popsat <b>nastavení RIPu</b>.','#r-nastaveni'],
+ ['Vysvětlit <b>AM a FM rastr</b>, <b>úhly rastru</b> a <b>moaré</b>.','#r-uhly'],
+ ['Vysvětlit <b>DPI</b>, <b>LPI</b> a <b>PPI</b>.','#d-pojmy'],
+ ['<b>Spočítat</b> počet odstínů z DPI a LPI.','#d-vypocet'],
+ ['<b>Spočítat</b> rozlišení obrázku (PPI) z LPI.','#d-ppi'],
+ ['Vysvětlit, co je <b>tisková forma</b>, a popsat <b>ofsetové desky</b>.','#f-co'],
+ ['Vysvětlit <b>CTF</b> a <b>CTP</b> a <b>porovnat</b> je.','#o-srovnani'],
+ ['Popsat <b>osvitové jednotky</b> (vnější, vnitřní buben, plochá).','#o-jednotky']];
+document.getElementById('checkList').innerHTML=CH.map((c,i)=>`<label class="chk"><input type="checkbox" id="ch${i}"><a class="ml" href="${c[1]}">${c[0]}</a></label>`).join('');
+
+/* ---------- workflow ---------- */
+const WF=[
+ ['📥','Příjem dat','Zákazník pošle data – nejlépe <b>tiskové PDF</b> (PDF/X).'],
+ ['✈️','Preflight','<b>Kontrola dat</b>: spadávka, CMYK, rozlišení, písma, přímé barvy.'],
+ ['🔧','Úprava dat','Opravy chyb, <b>převod barev</b>, <b>trapping</b>, normalizace PDF.'],
+ ['📐','Montáž','<b>Vyřazení stran</b> na tiskový arch + tiskové značky.'],
+ ['🖥️','Náhled / nátisk','Zákazník vidí výsledek: <b>náhled</b> na monitoru nebo <b>nátisk</b> na papíře.'],
+ ['✍️','Imprimatur','Zákazník nátisk <b>podepíše</b> = schválí tisk.'],
+ ['⚙️','RIP','Převod na <b>rastrové body</b>, separace C, M, Y, K.'],
+ ['💡','Osvit','<b>Osvitová jednotka</b> osvítí desku (CTP) nebo film (CTF).'],
+ ['🟫','Tisková forma','Hotová <b>deska</b> jde do tiskového stroje → <b>tisk</b>.']];
+document.getElementById('wfSteps').innerHTML=WF.map((w,i)=>`<button onclick="wf(${i})"><span class="ic">${w[0]}</span><small>${i+1}</small>${w[1]}</button>`).join('');
+function wf(i){document.querySelectorAll('#wfSteps button').forEach((b,j)=>b.classList.toggle('on',j===i));
+  document.getElementById('wfOut').innerHTML=`<b>${i+1}. ${WF[i][0]} ${WF[i][1]}</b><br>${WF[i][2]}`;}
+wf(0);
+
+/* ---------- hra: najdi chyby ---------- */
+const HE=[
+ '<b>Chybí spadávka</b> – modrá plocha nesahá vlevo za ořez. Po ořezu zůstane bílý proužek.',
+ '<b>Malé rozlišení</b> – obrázek má 72 ppi, je vidět kostičky. Potřeba 300 ppi.',
+ '<b>RGB barva</b> – zářivě zelená nejde v CMYK vytisknout. Převést do CMYK.',
+ '<b>Chybí písmo</b> – růžové podbarvení. Písmo není vložené.',
+ '<b>Text u ořezu</b> – je mimo bezpečný okraj (méně než 3 mm). Může se oříznout.',
+ '<b>Vlasová linka</b> – je moc tenká (pod 0,25 pt). V tisku zmizí.'];
+let found=new Set();
+document.querySelectorAll('#hraSvg .hot').forEach(g=>g.addEventListener('click',()=>{const i=+g.dataset.i;found.add(i);g.classList.add('hit');hraDraw();}));
+function hraDraw(){document.getElementById('hraScore').textContent=`Nalezeno: ${found.size} / ${HE.length}`+(found.size===HE.length?' 🎉':'');
+  document.getElementById('hraList').innerHTML=[...found].sort().map(i=>`<li>${HE[i]}</li>`).join('');}
+function hraReset(){found.clear();document.querySelectorAll('#hraSvg .hot').forEach(g=>g.classList.remove('hit'));hraDraw();}
+function hraShow(){HE.forEach((_,i)=>found.add(i));document.querySelectorAll('#hraSvg .hot').forEach(g=>g.classList.add('hit'));hraDraw();}
+
+/* ---------- vyřazování ---------- */
+function sideShow(s){document.querySelectorAll('.side-btns button').forEach((b,i)=>b.classList.toggle('on',i===s));
+  const P=s?[[3,6],[2,7]]:[[5,4],[8,1]];const col=s?'#009fe3':'#e6007e';
+  let h=`<rect x="10" y="10" width="300" height="220" fill="#fff" stroke="#1d1d1b" stroke-width="3"/><path d="M160 10v220M10 120h300" stroke="#1d1d1b" stroke-width="2" stroke-dasharray="7 5"/>`;
+  P.forEach((row,r)=>row.forEach((n,c)=>{const x=10+c*150+75,y=10+r*110+55;
+    h+=`<g transform="rotate(${r===0?180:0} ${x} ${y})"><rect x="${x-58}" y="${y-44}" width="116" height="88" rx="6" fill="${col}" opacity=".12"/><text x="${x}" y="${y+16}" font-size="46" font-weight="900" text-anchor="middle" fill="${col}">${n}</text><text x="${x}" y="${y-28}" font-size="11" text-anchor="middle" fill="#5d5d66">▲ hlava</text></g>`;}));
+    document.getElementById('impSvg').innerHTML=h;}
+sideShow(0);
+
+/* ---------- světlo ---------- */
+const LT=[['#009fe3','#e6007e','#ffd400','#8dc63f','Pod <b>D50</b> vidíš barvy správně. Tak se hodnotí nátisk.'],
+ ['#3fa0a8','#f0507a','#ffc400','#a5b92f','Pod <b>žárovkou</b> je vše <b>žlutější</b> a teplejší.'],
+ ['#11a6e8','#c8338f','#e8e32c','#55c06a','Pod <b>zářivkou</b> jsou barvy <b>studené</b> a zelenavé.']];
+function lightShow(i){document.querySelectorAll('.light-btns button').forEach((b,j)=>b.classList.toggle('on',j===i));
+  document.getElementById('lightSw').innerHTML=['C','M','Y','zelená'].map((n,j)=>`<div style="background:${LT[i][j]}">${n}</div>`).join('');
+  document.getElementById('lightMsg').innerHTML=LT[i][4];}
+lightShow(0);
+
+/* ---------- kontrolní proužek ---------- */
+(function(){const c=['#009fe3','#e6007e','#ffd400','#1d1d1b','#5bc0eb','#f08cbf','#fff08a','#777','#2e3192','#c1272d','#3aaa35','#a0a0a0','#bfe6f8','#fbd3e7','#fff6c4','#d0d0d0'];
+ let h='';c.forEach((k,i)=>h+=`<rect x="${32+i*11}" y="98" width="10" height="18" fill="${k}" stroke="#fff" stroke-width=".5"/>`);document.getElementById('wedge').innerHTML=h;})();
+
+/* ---------- AM × FM ---------- */
+(function(){let a='',f='';const tones=[.1,.3,.5,.7,.9];
+ for(let i=0;i<5;i++){const t=tones[i];for(let y=0;y<4;y++)for(let x=0;x<2;x++){const cx=i*40+10+x*20,cy=10+y*20;a+=`<circle cx="${cx}" cy="${cy}" r="${(10*Math.sqrt(t/Math.PI)*1.6).toFixed(2)}" fill="#1d1d1b"/>`;}
+  let s=i*977+13;const rnd=()=>{s=(s*9301+49297)%233280;return s/233280;};
+  const n=Math.round(t*320);for(let k=0;k<n;k++)f+=`<rect x="${(i*40+rnd()*40).toFixed(1)}" y="${(rnd()*80).toFixed(1)}" width="2" height="2" fill="#1d1d1b"/>`;}
+ document.getElementById('amSvg').innerHTML=a;document.getElementById('fmSvg').innerHTML=f;})();
+
+/* ---------- moaré ---------- */
+function lines(id,ang,col){let h=`<g transform="rotate(${ang} 100 100)">`;for(let x=-150;x<350;x+=6)h+=`<line x1="${x}" y1="-150" x2="${x}" y2="350" stroke="${col}" stroke-width="2.4"/>`;return h+'</g>';}
+function moDraw(){const d=+document.getElementById('moR').value;document.getElementById('moVal').textContent=d+'°';
+  document.getElementById('moSvg').innerHTML=`<defs><clipPath id="mc"><rect width="200" height="200" rx="10"/></clipPath></defs><g clip-path="url(#mc)"><rect width="200" height="200" fill="#fff"/>${lines(0,0,'#009fe3')}<g style="mix-blend-mode:multiply">${lines(0,d,'#e6007e')}</g></g>`;
+  document.getElementById('moMsg').innerHTML=d>=28&&d<=32?'<span class="yes">✓ 30° – moaré je nejméně vidět (vznikne drobná rozeta).</span>':d===0?'<span class="no">✗ 0° – rastry leží přesně na sobě, nepatrný posun = velké chyby v barvě.</span>':d<15?'<span class="no">✗ Malý rozdíl – velké, výrazné moaré!</span>':'<span style="color:#b07a00;font-weight:800">⚠ Moaré je slabší, ale ještě vidět.</span>';}
+document.getElementById('moR').addEventListener('input',moDraw);moDraw();
+
+/* ---------- DPI mřížka (obrázek) ---------- */
+(function(){let h='';const n=16,s=120/n;for(let y=0;y<n;y++)for(let x=0;x<n;x++){const cx=x+.5-8,cy=y+.5-8;if(cx*cx+cy*cy<26)h+=`<rect x="${10+x*s}" y="${10+y*s}" width="${s}" height="${s}" fill="#1d1d1b"/>`;}
+ for(let i=0;i<=n;i++){h+=`<path d="M${10+i*s} 10V130M10 ${10+i*s}H130" stroke="#009fe3" stroke-width=".4"/>`;}
+ h+=`<rect x="10" y="10" width="120" height="120" fill="none" stroke="#e6007e" stroke-width="3"/>`;document.getElementById('dpiGrid').innerHTML=h;})();
+
+/* ---------- LPI jezdec ---------- */
+const LP=[[85,'📰 noviny – hrubý rastr, body jsou vidět'],[120,'📄 nenatíraný papír, letáky'],[150,'📘 časopisy, katalogy – nejčastější'],[175,'🖼️ kvalitní a umělecký tisk'],[200,'🖼️ umělecký tisk – jen na velmi kvalitní papír']];
+function lpiDraw(){const v=LP[+document.getElementById('lpiR').value];const l=v[0];document.getElementById('lpiVal').textContent=l;document.getElementById('lpiCm').textContent=Math.round(l/2.54);
+  const step=200/(l/10);let h='<defs><linearGradient id="lg"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient></defs>';
+  for(let y=-60+step/2;y<260;y+=step)for(let x=-60+step/2;x<260;x+=step){const t=Math.min(1,Math.max(0,(x+60)/320));h+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(step*.62*Math.sqrt(t)).toFixed(2)}" fill="#1d1d1b" transform="rotate(45 100 100)"/>`;}
+  document.getElementById('lpiSvg').innerHTML=`<clipPath id="lc"><rect width="200" height="200" rx="10"/></clipPath><g clip-path="url(#lc)"><rect width="200" height="200" fill="#fff"/>${h}</g>`;
+  document.getElementById('lpiMsg').innerHTML=v[1];}
+document.getElementById('lpiR').addEventListener('input',lpiDraw);lpiDraw();
+
+/* ---------- rastrová buňka ---------- */
+let cellN=16;
+function cellDpi(d){cellN=d/150;document.querySelectorAll('.cell-btns button').forEach(b=>b.classList.toggle('on',b.textContent.startsWith(d)));cellDraw();}
+function cellDraw(){const t=+document.getElementById('cellR').value;document.getElementById('cellVal').textContent=t;
+  const n=cellN,s=160/n,c=[];for(let y=0;y<n;y++)for(let x=0;x<n;x++){c.push([x,y,(x+.5-n/2)**2+(y+.5-n/2)**2]);}
+  c.sort((a,b)=>a[2]-b[2]);const k=Math.round(t/100*n*n);let h='';
+  c.forEach((p,i)=>{h+=`<rect x="${p[0]*s}" y="${p[1]*s}" width="${s}" height="${s}" fill="${i<k?'#1d1d1b':'#fff'}" stroke="#009fe3" stroke-width="${n>10?.4:.8}"/>`;});
+  document.getElementById('cellSvg').innerHTML=h+'<rect width="160" height="160" fill="none" stroke="#e6007e" stroke-width="3"/>';
+  document.getElementById('cellMsg').innerHTML=`Mřížka má <b>${n} × ${n} = ${n*n}</b> laserových bodů (${n*150} dpi : 150 lpi = ${n}).<br>Černých laserových bodů: <b>${k}</b>. Možných odstínů: <b>${n*n+1}</b>.`;}
+document.getElementById('cellR').addEventListener('input',cellDraw);cellDraw();
+
+/* ---------- výpočet odstínů ---------- */
+const fmt=n=>String(Math.round(n*100)/100).replace('.',',');
+function calc(){const d=+document.getElementById('cDpi').value,l=+document.getElementById('cLpi').value;const r=d/l,rr=r*r,odst=Math.round(rr+1);
+  const ok=odst>=256;
+  document.getElementById('calcOut').innerHTML=`
+   <div class="st"><span>1</span>Vydělím DPI : LPI → <b>${d} : ${l} = ${fmt(r)}</b><br><small>Tolik laserových bodů má mřížka na jedné straně.</small></div>
+   <div class="st"><span>2</span>Číslo umocním (vynásobím samo sebou) → <b>${fmt(r)} × ${fmt(r)} = ${fmt(rr)}</b><br><small>Tolik laserových bodů je v celé mřížce.</small></div>
+   <div class="st"><span>3</span>Přičtu 1 (bílá) → <b>${fmt(rr)} + 1 ${Number.isInteger(rr)?'=':'≈'} ${odst}</b> odstínů</div>
+   <div class="st ${ok?'ok':'bad'}"><span>4</span>${ok?`✓ ${odst} ≥ 256 → přechody budou <b>hladké</b>. (Víc než 256 PostScript stejně nevyužije.)`:`✗ ${odst} &lt; 256 → málo odstínů. V přechodu budou vidět <b>skoky (pruhy)</b>. Sniž LPI nebo zvyš DPI.`}</div>`;
+  const n=Math.min(odst,256);let g='';
+  if(n<256){for(let i=0;i<n;i++){const v=Math.round(255-i*255/(n-1));g+=`<i style="background:rgb(${v},${v},${v})"></i>`;}}
+  document.getElementById('gradOut').innerHTML=n<256?g:'<i style="flex:1;background:linear-gradient(90deg,#fff,#000)"></i>';
+  document.getElementById('gradMsg').innerHTML=n<256?`Přechod ze ${n} odstínů – vidíš <b>schody</b>.`:`Přechod z ${n} odstínů – <b>plynulý</b>.`;}
+['cDpi','cLpi'].forEach(i=>document.getElementById(i).addEventListener('change',calc));calc();
+
+/* ---------- výpočet PPI ---------- */
+function ppi(){const l=+document.getElementById('pLpi').value;
+  document.getElementById('ppiOut').innerHTML=`
+   <div class="st"><span>1</span>Vezmu lineaturu: <b>${l} lpi</b></div>
+   <div class="st"><span>2</span>Vynásobím 2 → <b>${l} × 2 = ${l*2} ppi</b> (ideál)</div>
+   <div class="st"><span>3</span>Nejmenší možné: ${l} × 1,5 = <b>${fmt(l*1.5)} ppi</b></div>
+   <div class="st ok"><span>✓</span>Obrázek pro tisk s ${l} lpi má mít <b>${fmt(l*1.5)}–${l*2} ppi</b> ve <b>skutečné velikosti</b> v sazbě.</div>`;}
+document.getElementById('pLpi').addEventListener('change',ppi);ppi();
+
+/* ---------- CTF × CTP řetěz ---------- */
+const CT=[[['💻','počítač + RIP'],['💡','osvit filmu'],['🧪','vyvolání filmu'],['📐','montáž filmů'],['☀️','kopírování na desku (UV)'],['🧪','vyvolání desky'],['🖨️','tisk']],
+ [['💻','počítač + RIP'],['💡','osvit desky laserem'],['🧪','(vyvolání desky)'],['🖨️','tisk']]];
+function ctShow(i){document.querySelectorAll('.ct-btns button').forEach((b,j)=>b.classList.toggle('on',j===i));
+  document.getElementById('ctChain').innerHTML=CT[i].map((s,k)=>`<div class="lk" style="animation-delay:${k*.15}s"><span>${s[0]}</span>${s[1]}</div>`).join('<b class="arr">→</b>');
+  document.getElementById('ctMsg').innerHTML=i?'CTP = <span class="yes">4 kroky</span>, bez filmu.':'CTF = <span class="no">7 kroků</span>, s filmem.';}
+ctShow(0);
+
+/* ---------- slovníček ---------- */
+const NS='https://slovnik.neslhk.com/';
+const GL=[
+ ['🖨️','Adobe Acrobat Pro','Program pro PDF. Umí kontrolu před výstupem (preflight).','adobe-acrobat','#k-sw'],
+ ['📐','Archová montáž','Rozmístění stran nebo výrobků na tiskový arch i se značkami.','archova-montaz','#m-co'],
+ ['📄','Arch','Velký list papíru, na který tiskne tiskový stroj (např. B1).','arch','#m-co'],
+ ['🔳','AM rastr','Body stejně daleko, mění se jejich velikost.','tiskovy-rastr','#r-am-fm'],
+ ['🎨','CMYK','Tiskové barvy: azurová, purpurová, žlutá, černá. Každá má svou desku.','cmyk','#r-kroky'],
+ ['🎞️','CTF','Computer to Film – počítač osvítí film, z filmu se kopíruje deska.','','#o-ctf'],
+ ['💡','CTP','Computer to Plate – počítač osvítí přímo tiskovou desku.','ctp','#o-ctp'],
+ ['🕸️','CTS','Computer to Screen – osvit síta pro sítotisk bez filmu.','cts','#o-dalsi'],
+ ['🎞️','Cromalin','Analogový nátisk z filmů (dříve u CTF).','','#n-druhy'],
+ ['☀️','D50','Normované světlo 5000 K. Pod ním se hodnotí nátisky.','','#n-svetlo'],
+ ['📏','Denzitometr','Přístroj, který měří hustotu barvy (denzitu) a velikost bodu.','','#o-ctf'],
+ ['💧','Digitální nátisk','Nátisk na inkoustové tiskárně s ICC profilem. Simuluje ofset.','natisk','#n-druhy'],
+ ['💻','Digitální tisk','Tisk bez pevné tiskové formy (Computer to Print).','digitalni-tisk','#o-dalsi'],
+ ['🔍','DPI','Dots per inch – laserové body na palec. Rozlišení osvitové jednotky (např. 2400 dpi).','dpi','#d-pojmy'],
+ ['✂️','Falcování','Skládání (lámání) archu.','falcovani','#m-vyrazovani'],
+ ['🔳','FM rastr','Stochastický rastr: stejně malé body, mění se jejich počet. Bez moaré.','','#r-am-fm'],
+ ['🎯','ICC profil','Popis barev zařízení nebo tisku. Podle něj se simuluje tisk v náhledu a nátisku.','icc-profil','#n-natisk'],
+ ['✍️','Imprimatur','Schválení nátisku zákazníkem podpisem – „ať se tiskne“.','imprimatur','#n-imprimatur'],
+ ['🖥️','Kalibrace','Nastavení zařízení (monitoru, tiskárny), aby ukazovalo správné barvy.','kalibrace','#n-nahled'],
+ ['🖱️','Kalibrační sonda','Přístroj, který se přiloží na monitor a změří jeho barvy.','kalibracni-sonda','#n-nahled'],
+ ['📈','Kalibrační křivka','Nastavení v RIPu, které vyrovná nárůst tiskového bodu.','','#r-krivka'],
+ ['🌈','Kontrolní proužek','Řada barevných políček na nátisku. Měří se spektrofotometrem.','','#n-cert'],
+ ['📏','LPI (hustota rastru, lineatura)','Lines per inch – řady tiskových bodů na palec (např. 150 lpi = 60 l/cm).','lpi','#d-pojmy'],
+ ['🔴','Laserový bod','Nejmenší bod, který udělá laser osvitové jednotky. Tiskový bod je mřížka laserových bodů (16 × 16).','','#d-bunka'],
+ ['👀','Pozorovací vzdálenost','Odkud se na tiskovinu díváme. Z dálky (billboard) stačí hrubý rastr.','','#d-dalka'],
+ ['💦','Mokrý nátisk','Nátisk na tiskovém stroji z tiskové formy. Nejlepší, ale velmi drahý.','natisk','#n-druhy'],
+ ['🖥️','DI (Direct Imaging)','Tiskový stroj, který si sám vyrobí tiskovou formu (CTPress).','','#o-dalsi'],
+ ['📒','Maketa','Model tiskoviny ze složeného papíru s čísly stran. Nekontroluje barvy!','maketa','#m-maketa'],
+ ['🌀','Moaré','Rušivý vzor ze špatně natočených rastrů.','moare','#r-uhly'],
+ ['🖥️','Náhled (soft proof)','Kontrola na kalibrovaném monitoru, i on-line (vzdálený náhled). Není závazný na barvy.','soft-proof','#n-nahled'],
+ ['⚫','Nárůst tiskového bodu','Body jsou po tisku větší než v datech. Obraz ztmavne.','','#r-krivka'],
+ ['🖨️','Nátisk (hard proof)','Zkušební tisk na papíře s věrnými barvami. Je závazný.','natisk','#n-natisk'],
+ ['🟫','Ofsetový tisk','Tisk z plochy. Tisková forma je hliníková deska.','ofsetovy-tisk','#f-desky'],
+ ['✂️','Ořezové značky','Značky mimo čistý formát. Ukazují, kde řezat.','orezove-znacky','#m-znacky'],
+ ['💡','Osvit','Záznam obrazu laserem na film nebo desku.','osvit','#osvit'],
+ ['🏭','Osvitová jednotka','Zařízení pro výrobu tiskových forem. Osvítí film (imagesetter) nebo desku (platesetter).','osvitova-jednotka','#o-jednotky'],
+ ['📄','PDF/X','Tiskové PDF podle normy (např. PDF/X-1a, PDF/X-4).','pdf-x','#k-co'],
+ ['🖼️','PPI','Pixels per inch – rozlišení obrázku. Pro tisk 300 ppi.','ppi','#d-ppi'],
+ ['🏭','Prepress','Předtisková příprava: vše od dat po tiskovou formu.','pre-press','#prepress'],
+ ['✈️','Preflight','Kontrola tiskových dat před výstupem.','','#kontrola'],
+ ['🟥','Přímá barva','Předem namíchaná barva (PANTONE). Má vlastní desku.','prima-barva','#k-seznam'],
+ ['⚙️','RIP','Raster Image Processor – převede PDF na rastrové body pro osvit.','rip','#r-co'],
+ ['🔍','Rozlišení','Hustota bodů nebo pixelů (dpi, lpi, ppi).','rozliseni','#dpi'],
+ ['📑','Separace (výtažky)','Rozdělení obrazu na tiskové barvy C, M, Y, K. Každá = jedna deska.','separace-vytazkovani','#r-kroky'],
+ ['🎯','Soutisk','Barvy C, M, Y, K přesně na sobě.','soutisk','#m-znacky'],
+ ['⊕','Soutiskové značky','Křížky v kruhu na archu. Kontrola soutisku.','soutiskove-znacky','#m-znacky'],
+ ['↔️','Spadávka','Přesah obrazu 3 mm za čistý formát.','spadavka','#k-seznam'],
+ ['🔬','Spektrofotometr','Přístroj, který přesně měří barvu (hodnoty Lab, ΔE).','spektrofotometr','#n-cert'],
+ ['🟫','Tisková forma','Nese obraz pro tisk (deska, válec, síto).','tiskova-forma','#forma'],
+ ['🎯','Tiskové značky','Ořezové, soutiskové, falcovací značky a barevné pruhy na archu.','tiskove-znacky','#m-znacky'],
+ ['🔳','Tiskový rastr','Všechny tiskové body, ze kterých je obraz složený.','tiskovy-rastr','#r-rastr'],
+ ['🧩','Trapping','Barvy se nepatrně překryjí, aby při posunu papíru nevznikly bílé mezery.','trapping','#r-trap'],
+ ['📐','Úhel rastru','Natočení rastru jedné barvy (např. K 45°).','','#r-uhly'],
+ ['🔁','Vlastní × cizí rub','Vlastní rub: líc i rub z jedné sady desek. Cizí rub: každá strana má své desky.','','#m-rub'],
+ ['📑','Vyřazování stran','Rozmístění stran na arch, aby po složení šly za sebou.','','#m-vyrazovani'],
+ ['🔄','Workflow','Řízený postup zpracování dat v tiskárně.','workflow','#p-kroky']];
+GL.sort((a,b)=>a[1].localeCompare(b[1],'cs'));
+function renderGl(){const q=(document.getElementById('glQ').value||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+  document.getElementById('glList').innerHTML=GL.filter(g=>(g[1]+' '+g[2]).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').includes(q)).map(g=>
+   `<div class="gli"><div class="gi">${g[0]}</div><div><b>${g[1]}</b><p>${g[2]}</p><div class="gl-links">${g[3]?`<a class="sl" href="${NS}${g[3]}/" target="_blank" rel="noopener">🤟 znakový jazyk</a>`:''}<a class="ml" href="${g[4]}">↑ v lekci</a></div></div></div>`).join('');
+  bindMl(document.getElementById('glList'));}
+renderGl();
+
+/* ---------- kartičky ---------- */
+const CARDS=[
+ ['🏭','Prepress','<b>Předtisková příprava</b>: data → kontrola → montáž → nátisk → RIP → tisková forma.'],
+ ['✈️','Preflight','<b>Kontrola tiskových dat</b> před výstupem: spadávka, CMYK, 300 ppi, písma.'],
+ ['📐','Montáž','Rozmístění stran na <b>tiskový arch</b> se značkami.'],
+ ['📑','Vyřazování','Strany na archu tak, aby po <b>složení</b> šly <b>za sebou</b>.'],
+ ['📒','Maketa','<b>Model</b> tiskoviny – složený papír s čísly stran.'],
+ ['🖥️','Náhled','<b>Soft proof</b> na kalibrovaném <b>monitoru</b>. Není závazný.'],
+ ['🖨️','Nátisk','<b>Hard proof</b> na <b>papíře</b>. Věrné barvy, závazný.'],
+ ['✅','Certifikovaný nátisk','Má <b>kontrolní proužek</b>, změřený <b>spektrofotometrem</b>, ΔE v toleranci.'],
+ ['✍️','Imprimatur','<b>Podpis</b> zákazníka = schválení tisku.'],
+ ['⚙️','RIP','<b>Raster Image Processor</b>: PDF → rastrové body, separace C, M, Y, K.'],
+ ['🔍','DPI','<b>Laserové body</b> na palec (2400 dpi).'],
+ ['📏','LPI','<b>Hustota rastru</b> – řady tiskových bodů na palec (150 lpi = 60 l/cm).'],
+ ['🧩','Trapping','Barvy se <b>nepatrně překryjí</b> → při posunu papíru <b>není bílá mezera</b>.'],
+ ['🔴','16 × 16','Tiskový bod = <b>mřížka 16 × 16 laserových bodů</b> → 256 odstínů.'],
+ ['🧮','Odstíny','(DPI : LPI)² + 1 → 2400 : 150 = 16 → <b>257</b>.'],
+ ['🖼️','PPI','Obrázek = <b>LPI × 2</b> → 150 × 2 = <b>300 ppi</b>.'],
+ ['🌀','Moaré','Rušivý vzor. Brání mu <b>úhly rastru</b> (rozdíl 30°) nebo FM rastr.'],
+ ['🟫','Tisková forma','Nese obraz. Ofset = <b>hliníková deska</b>. 1 barva = 1 deska.'],
+ ['🎞️','CTF','Computer to <b>Film</b>: film → montáž → kopírování na desku.'],
+ ['💡','CTP','Computer to <b>Plate</b>: laser osvítí <b>přímo desku</b>. Méně kroků, ostřejší bod.']];
+function renderCards(a){document.getElementById('cards').innerHTML=a.map(c=>`<div class="flip" onclick="this.classList.toggle('on')"><div class="in"><div class="f"><span class="ic">${c[0]}</span><b>${c[1]}</b></div><div class="b">${c[2]}</div></div></div>`).join('');}
+function shuffleCards(){renderCards([...CARDS].sort(()=>Math.random()-.5));}
+function resetCards(){document.querySelectorAll('.flip').forEach(f=>f.classList.remove('on'));}
+renderCards(CARDS);
+
+/* ---------- kvíz ---------- */
+const Q=[
+ ['Co je prepress?',['dokončující zpracování','předtisková příprava','tisk nákladu','balení tiskovin'],1,'Prepress = vše před tiskem, až po tiskovou formu.'],
+ ['Čím prepress končí?',['hotovou tiskovou formou','svázanou knihou','fakturou','ořezem'],0,'Výsledek prepressu je tisková forma (deska).'],
+ ['Co je preflight?',['kontrola tiskových dat před výstupem','nátisk na papíře','vyřazování stran','osvit desky'],0,'Preflight = předletová kontrola dat.'],
+ ['Co NEPATŘÍ do kontroly tiskových dat?',['spadávka','rozlišení obrázků','vložená písma','počet zaměstnanců tiskárny'],3,'Kontrolujeme data: spadávku, barvy, rozlišení, písma…'],
+ ['Jaké rozlišení mají mít obrázky pro tisk se 150 lpi?',['72 ppi','150 ppi','300 ppi','2400 ppi'],2,'PPI = LPI × 2 = 150 × 2 = 300 ppi.'],
+ ['Co je vyřazování stran?',['mazání stran','rozmístění stran na arch, aby po složení šly za sebou','tisk jen některých stran','kontrola pravopisu'],1,'Po složení archu jdou strany 1, 2, 3…'],
+ ['Na 8stránkovém archu leží vedle strany 1 strana…',['2','4','8','5'],2,'Součet stran vedle sebe = 9 (8 + 1).'],
+ ['K čemu je maketa?',['model tiskoviny – kontrola pořadí stran','druh tiskové desky','barevný profil','typ rastru'],0,'Maketa = složený papír s čísly stran.'],
+ ['Co jsou soutiskové značky?',['značky, kde řezat','značky pro kontrolu, že barvy sedí na sobě','čísla stran','logo tiskárny'],1,'Soutisk = C, M, Y, K přesně na sobě.'],
+ ['Náhled (soft proof) je…',['na papíře','na kalibrovaném monitoru','na tiskové desce','na filmu'],1,'Soft proof = obrazovkový nátisk.'],
+ ['Který nátisk je závazný na barvy?',['náhled v e-mailu','certifikovaný digitální nátisk','polohový nátisk','maketa'],1,'Certifikovaný nátisk je změřený a v toleranci.'],
+ ['Čím se měří kontrolní proužek nátisku?',['pravítkem','spektrofotometrem','lupou','vahou'],1,'Spektrofotometr změří barvy a odchylku ΔE.'],
+ ['Pod jakým světlem hodnotíme nátisk?',['žárovka','D50','UV lampa','zářivka'],1,'D50 = normované denní světlo 5000 K.'],
+ ['Co je imprimatur?',['schválení nátisku zákazníkem','druh papíru','chyba v datech','osvitová jednotka'],0,'Latinsky „ať se tiskne“.'],
+ ['Co znamená RIP?',['Raster Image Processor','Real Image Print','Rapid Ink Press','Raster Ink Plate'],0,'RIP převede data na rastrové body.'],
+ ['Co NENÍ nastavení RIPu?',['lineatura','úhly rastru','tvar bodu','gramáž papíru'],3,'Gramáž je vlastnost papíru, ne nastavení RIPu.'],
+ ['Co je DPI?',['laserové body na palec','řady tiskových bodů na palec','pixely v obrázku','počet desek'],0,'DPI = dots per inch.'],
+ ['Co je LPI?',['hustota rastru – řady tiskových bodů na palec','laserové body na palec','velikost papíru','počet barev'],0,'LPI = lines per inch.'],
+ ['K čemu je trapping?',['aby při posunu papíru nevznikly bílé mezery','aby se zrychlil tisk','aby se zmenšil soubor','aby se přidala spadávka'],0,'Barvy se nepatrně překryjí.'],
+ ['Jakou hustotu rastru má billboard?',['30 lpi','150 lpi','175 lpi','300 lpi'],0,'Díváme se z dálky – hrubý rastr stačí.'],
+ ['Jaký je rozdíl mezi maketou a nátiskem?',['maketa nekontroluje barvy, nátisk ano','maketa je dražší','nátisk je jen na monitoru','žádný'],0,'Maketa = pořadí stran a tvar. Nátisk = i barvy.'],
+ ['Který nátisk je nejlepší, ale velmi drahý?',['na tiskovém stroji (mokrý)','digitální','náhled na monitoru','maketa'],0,'Tiskne se z tiskové formy jako skutečný tisk.'],
+ ['Z kolika laserových bodů je nejčastěji tiskový bod?',['16 × 16','2 × 2','100 × 100','4 × 4'],0,'16 × 16 = 256 → 2400 dpi : 16 = 150 lpi.'],
+ ['Kolik odstínů je při 2400 dpi a 150 lpi?',['16','150','257','2400'],2,'2400 : 150 = 16 → 16 × 16 = 256 → + 1 = 257.'],
+ ['Kolik odstínů je při 1200 dpi a 150 lpi?',['65','257','8','1200'],0,'1200 : 150 = 8 → 8 × 8 = 64 → + 1 = 65. To je málo!'],
+ ['Jaká lineatura se používá pro noviny?',['85–100 lpi','150 lpi','200 lpi','300 lpi'],0,'Novinový papír – hrubší rastr.'],
+ ['Jak se jmenuje rušivý vzor ze špatných úhlů rastru?',['soutisk','moaré','trapping','spadávka'],1,'Moaré.'],
+ ['Jaký rozdíl úhlů mají výrazné barvy C, M, K?',['5°','15°','30°','90°'],2,'Rozdíl 30°. Žlutá jen 15°.'],
+ ['FM rastr…',['má stejně velké body, mění se jejich počet','má stejnou vzdálenost bodů, mění se velikost','nemá body','je jen pro noviny'],0,'FM = stochastický, bez moaré.'],
+ ['Proč RIP používá kalibrační křivku?',['aby vyrovnal nárůst tiskového bodu','aby zvětšil soubor','aby změnil formát','aby přidal spadávku'],0,'Body v tisku narostou → RIP je předem zmenší.'],
+ ['Co je tisková forma v ofsetu?',['síto','hliníková deska','měděný válec','gumová deska'],1,'Ofset = hliníková deska.'],
+ ['Kolik tiskových desek potřebuji pro CMYK + 1 přímou barvu?',['1','4','5','8'],2,'4 (CMYK) + 1 (přímá) = 5.'],
+ ['Co znamená CTF?',['Computer to Film','Color to Film','Computer to Form','Cut the Film'],0,'Počítač → film → deska.'],
+ ['Co znamená CTP?',['Computer to Plate – osvit přímo desky','Computer to Paper','Color to Print','Copy to Plate'],0,'Bez filmu.'],
+ ['Co je výhoda CTP proti CTF?',['méně kroků, ostřejší bod, přesný soutisk','levnější zařízení','používá film','oprava chyby je levnější'],0,'Odpadá film, montáž filmů a kopírování.'],
+ ['V osvitové jednotce s vnějším bubnem je deska…',['na povrchu bubnu','uvnitř bubnu','na ploše','ve stroji'],0,'Vnější buben – hlavně termální CTP.'],
+ ['Jakým laserem se osvítí termální deska?',['infračerveným (830 nm)','fialovým (405 nm)','zeleným','žádným'],0,'Termální = teplo IR laseru.']];
+let answered=0,correct=0,QN=15,cur=[];
+function buildQuiz(){answered=0;correct=0;document.getElementById('score').textContent='';
+  cur=[...Q.keys()].sort(()=>Math.random()-.5).slice(0,QN);
+  document.getElementById('quiz').innerHTML=cur.map((qi,n)=>{const q=Q[qi];
+    return `<div class="q" data-q="${qi}"><p>${n+1}. ${q[0]}</p><div class="opts">${q[1].map((o,i)=>`<button onclick="ans(this,${qi},${i})">${o}</button>`).join('')}</div><div class="fb"></div></div>`;}).join('');}
+function ans(btn,qi,i){const box=btn.closest('.q');if(box.dataset.done)return;box.dataset.done=1;answered++;
+  const q=Q[qi];const bs=box.querySelectorAll('.opts button');bs[q[2]].classList.add('right');
+  const fb=box.querySelector('.fb');
+  if(i===q[2]){correct++;fb.innerHTML='✅ <b>Správně.</b> '+q[3];}else{btn.classList.add('wrong');fb.innerHTML='❌ <b>Ne.</b> Správně: <b>'+q[1][q[2]]+'</b>. '+q[3];}
+  fb.style.display='block';
+  if(answered===cur.length){const p=Math.round(correct/cur.length*100);document.getElementById('score').innerHTML=`Výsledek: ${correct} / ${cur.length} (${p} %) ${p>=80?'🎉':p>=50?'👍':'📖 Zopakuj si „Tohle musí zaznít“.'}`;}}
+buildQuiz();
+
+/* ---------- psaní ---------- */
+const strip=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const W=[
+ {q:'Co je prepress a jaké má kroky?',
+  keys:[['předtisková příprava',/predtiskov|pred tiskem/],['kontrola dat / preflight',/kontrol|preflight/],['montáž / vyřazování',/montaz|vyraz/],['náhled / nátisk',/nahled|natisk|proof/],['imprimatur / schválení',/imprimatur|schval|podpis/],['RIP',/\brip/],['osvit',/osvit|ctp|ctf/],['tisková forma',/forma|desk/]],
+  bad:[[/postpress[^.]*(je|=) ?predtisk/,'Pozor: postpress je <b>dokončující zpracování</b>, ne předtisková příprava.']],
+  model:'Prepress je předtisková příprava – vše, co se udělá před tiskem. Nejdřív přijmu data a zkontroluji je (preflight). Pak udělám montáž: vyřadím strany na tiskový arch. Zákazník dostane náhled nebo nátisk a podepíše imprimatur. RIP převede data na rastrové body. Osvitová jednotka osvítí desku (CTP) nebo film (CTF). Výsledkem je tisková forma.'},
+ {q:'Jaký je rozdíl mezi náhledem a nátiskem? Co je certifikovaný nátisk?',
+  keys:[['náhled na monitoru',/monitor|obrazovk|soft/],['kalibrace',/kalibr/],['nátisk na papíře',/papir|hard/],['věrné barvy / ICC',/barv|icc|fogra/],['závazný',/zavazn|smluvn/],['kontrolní proužek',/prouz|wedge|polick/],['spektrofotometr / měření',/spektro|mer/],['imprimatur',/imprimatur|schval|podpis/]],
+  bad:[[/nahled[^.]*(na )?papir/,'Pozor: <b>náhled</b> je na <b>monitoru</b>, nátisk na papíře.']],
+  model:'Náhled (soft proof) je kontrola na kalibrovaném monitoru. Je rychlý a levný, ale na barvy není závazný. Nátisk (hard proof) je zkušební tisk na papíře, který věrně simuluje barvy tisku podle ICC profilu. Certifikovaný nátisk má kontrolní proužek, který se změří spektrofotometrem. Odchylka ΔE musí být v toleranci. Hodnotí se pod světlem D50. Zákazník ho schválí podpisem – imprimatur.'},
+ {q:'Co je RIP a co se v něm nastavuje?',
+  keys:[['Raster Image Processor',/raster image|rastr/],['převod na body',/bod|bitmap/],['separace CMYK',/separ|vytaz|cmyk/],['DPI / rozlišení',/dpi|rozlis/],['LPI / lineatura',/lpi|lineatur/],['úhly rastru',/uhl/],['tvar bodu / typ rastru',/tvar|am|fm|stochast/],['kalibrační křivka',/kalibr|krivk|narust/]],
+  bad:[[/rip[^.]*(je|=)[^.]*(papir|barva na)/,'RIP je <b>program</b>, který převádí data na body.']],
+  model:'RIP (Raster Image Processor) převede PDF nebo PostScript na rastrové body. Udělá separaci na C, M, Y, K a přímé barvy – pro každou desku jeden soubor. Nastavuje se v něm rozlišení výstupu (DPI), lineatura (LPI), typ rastru (AM, FM), tvar bodu, úhly rastru (rozdíl 30°, aby nevzniklo moaré), kalibrační křivka proti nárůstu bodu a trapping.'},
+ {q:'Vysvětli DPI a LPI. Kolik odstínů vznikne při 2400 dpi a 150 lpi?',
+  keys:[['DPI = laserové body',/dpi[^.]*(bod|dot)|bod[^.]*dpi/],['LPI = hustota rastru',/lpi[^.]*(lin|rad|line|hustot)|lineatur|hustot\w* rastr/],['palec',/palec|inch|2,54/],['2400 : 150 = 16',/16/],['16 × 16 = 256',/256/],['+ 1 = 257',/257/]],
+  bad:[[/(odstinu|odstiny)[^.]*\b(16|150)\b(?![^.]*256)/,'Výsledek není 16. Číslo <b>16 ještě umocni</b>: 16 × 16 = 256, + 1 = 257.']],
+  model:'DPI (dots per inch) je počet laserových bodů na palec – rozlišení osvitové jednotky. LPI (lines per inch) je hustota rastru (lineatura) – počet řad tiskových bodů na palec. Výpočet: 2400 : 150 = 16. Tiskový bod je mřížka 16 × 16 = 256 laserových bodů. Přičtu 1 (bílou) = 257 odstínů. To stačí na hladký přechod.'},
+ {q:'Co je tisková forma? Porovnej CTF a CTP.',
+  keys:[['nese obraz',/obraz|tisknouc/],['ofset = hliníková deska',/hlin|desk/],['CTF = film',/film/],['kopírování / montáž filmů',/kopir|montaz/],['CTP = přímo deska',/prim\w* (na )?desk|plate|rovnou/],['laser / osvitová jednotka',/laser|osvit/],['výhody CTP',/mene krok|ostr|presn|rychl|bez film/],['nevýhoda: cena',/drah|cen/]],
+  bad:[[/ctp[^.]*(pouziva|pres|osvit\w*|na)\s+film/,'Pozor: <b>CTP je bez filmu</b>. Film používá CTF.']],
+  model:'Tisková forma nese obraz, který se přenáší na papír. V ofsetu je to hliníková deska; každá barva má svou desku. U CTF (Computer to Film) osvitová jednotka osvítí film, filmy se smontují a zkopírují UV světlem na desku. U CTP (Computer to Plate) laser osvítí přímo desku. CTP má méně kroků, ostřejší bod, přesnější soutisk a nepotřebuje film. Nevýhodou je drahé zařízení.'}];
+document.getElementById('writing').innerHTML=W.map((w,i)=>`<div class="box wq"><h4>${i+1}. ${w.q}</h4><textarea id="w${i}" placeholder="Napiš odpověď…"></textarea><div class="btns"><button class="pri" onclick="check(${i})">Zkontrolovat</button></div><div class="res" id="r${i}"></div></div>`).join('');
+function check(i){const w=W[i],t=strip(document.getElementById('w'+i).value);const r=document.getElementById('r'+i);
+  if(t.trim().length<5){r.innerHTML='<div class="warn">Napiš nejdřív aspoň jednu větu.</div>';r.style.display='block';return;}
+  const ok=[],miss=[];w.keys.forEach(k=>(k[1].test(t)?ok:miss).push(k[0]));
+  const warns=w.bad.filter(b=>b[0].test(t)).map(b=>`<div class="warn">⚠️ ${b[1]}</div>`).join('');
+  r.innerHTML=`<div><b>Máš (${ok.length}/${w.keys.length}):</b><br>${ok.map(k=>`<span class="chip ok">✓ ${k}</span>`).join('')||'—'}</div>
+   <div style="margin-top:6px"><b>Chybí:</b><br>${miss.map(k=>`<span class="chip miss">✗ ${k}</span>`).join('')||'<span class="chip ok">nic, výborně!</span>'}</div>${warns}
+   <div class="model"><b>Vzorová odpověď:</b><br>${w.model}</div>`;r.style.display='block';}
+
+/* ---------- pomůcky pro čtení ---------- */
+function toggleShort(on){const b=document.body;const v=on===undefined?!b.classList.contains('short'):on;b.classList.toggle('short',v);
+  document.getElementById('shortBtn').classList.toggle('on',v);document.getElementById('shortBtn').textContent=v?'📖 Vše':'⚡ Jen to hlavní';}
+function toggleBig(){const v=document.body.classList.toggle('big');document.getElementById('bigBtn').classList.toggle('on',v);}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||!document.body.classList.contains('short'))return;
+  const t=document.querySelector(a.getAttribute('href'));if(t&&t.closest('.det'))toggleShort(false);},true);
+
+/* ---------- trapping ---------- */
+function trap(m){document.querySelectorAll('.trap-btns button').forEach((b,i)=>b.classList.toggle('on',i===m));
+  const dx=m?5:0,tr=m===2?11:0;
+  let h=`<rect x="10" y="10" width="220" height="100" fill="#ffd400"/>`;
+  h+=`<path d="M40 22h${160} v26h-66v52h-28v-52h-66z" fill="#fff" transform="translate(${dx} 0)"/>`;
+  h+=`<path d="M40 22h160v26h-66v52h-28v-52h-66z" fill="#009fe3" stroke="#009fe3" stroke-width="${tr}" stroke-linejoin="round"/>`;
+  document.getElementById('trapSvg').innerHTML=h;
+  document.getElementById('trapMsg').innerHTML=['✓ Barvy sedí přesně. Žádná mezera.','<span class="no">✗ Papír se posunul → u písmene je <b>bílá mezera</b>.</span>','<span class="yes">✓ Modré písmeno je nepatrně <b>větší</b> (přesah). Mezera nevznikne.</span>'][m];}
+trap(0);
+
+/* ---------- lupa ---------- */
+function lupa(){const v=+document.getElementById('lupaR').value;const cx=20+v*2.8,t=v/100;
+  let dots='';const s=10;for(let y=-2;y<10;y++)for(let x=-2;x<10;x++){dots+=`<circle cx="${x*s}" cy="${y*s}" r="${(s*.75*Math.sqrt(t)).toFixed(2)}" fill="#1d1d1b"/>`;}
+  document.getElementById('lupaSvg').innerHTML=`<defs><linearGradient id="lpg"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#1d1d1b"/></linearGradient><clipPath id="lcl"><circle cx="0" cy="0" r="34"/></clipPath></defs>
+   <rect x="10" y="10" width="300" height="50" fill="url(#lpg)" stroke="#1d1d1b"/>
+   <circle cx="${cx}" cy="35" r="12" fill="none" stroke="#e6007e" stroke-width="3"/>
+   <path d="M${cx} 47L${cx} 60" stroke="#e6007e" stroke-width="2" stroke-dasharray="3 2"/>
+   <g transform="translate(${Math.min(Math.max(cx,46),274)} 92)"><g clip-path="url(#lcl)"><rect x="-40" y="-40" width="80" height="80" fill="#fff"/><g transform="rotate(45) translate(-40 -40)">${dots}</g></g><circle r="34" fill="none" stroke="#1d1d1b" stroke-width="5"/></g>`;
+  document.getElementById('lupaMsg').innerHTML=v<25?'Světlé místo = <b>malé</b> body.':v>75?'Tmavé místo = <b>velké</b> body, skoro se dotýkají.':'Střední tón = <b>středně velké</b> body.';}
+document.getElementById('lupaR').addEventListener('input',lupa);lupa();
+
+/* ---------- z dálky ---------- */
+(function(){let d='';const s=20;for(let y=0;y<7;y++)for(let x=0;x<7;x++){const cx=x*s+s/2-10,cy=y*s+s/2-10;const dd=Math.hypot(cx-50,cy-50);const t=Math.max(.05,1-dd/75);d+=`<circle cx="${cx}" cy="${cy}" r="${(s*.62*Math.sqrt(t)).toFixed(2)}" fill="#e6007e"/>`;}
+ document.getElementById('nearSvg').innerHTML=`<rect width="120" height="120" fill="#fff"/><g transform="translate(10 10)">${d}</g>`;
+ document.getElementById('farSvg').innerHTML=`<rect width="120" height="120" fill="#fff"/><g transform="translate(45 45) scale(.25)">${d}</g>`;})();
+
+bindMl();
+</script>
+</body>
+</html>

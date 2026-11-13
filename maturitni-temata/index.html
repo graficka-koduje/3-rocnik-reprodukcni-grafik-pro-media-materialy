@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maturitní témata – Technologie – Reprodukční grafik pro média</title>
+<style>
+:root{--m:#e6007e;--c:#009fe3;--y:#ffd400;--k:#1d1d1b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#f7f7f9;color:var(--k);line-height:1.5}
+header{background:var(--k);color:#fff;padding:22px 18px 20px}
+header .home{display:inline-block;color:#fff;text-decoration:none;font-size:.85rem;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;margin-bottom:10px}
+header h1{margin:0;font-size:1.6rem;line-height:1.25}
+header h1 span{color:var(--m)}
+header p{margin:6px 0 0;color:#cfcfd6;font-size:.95rem}
+.cmyk{display:flex;gap:4px;margin-top:12px}.cmyk i{width:26px;height:6px;border-radius:3px}
+main{max-width:880px;margin:0 auto;padding:16px}
+h2.sec{font-size:1.25rem;margin:22px 0 10px}
+.easy{background:#fde6f2;border:2px solid #f6b8d8;border-radius:16px;padding:14px 16px;margin:4px 0 6px}
+.easy b.t{font-size:1.1rem}.easy p{margin:4px 0 0;font-size:.95rem}
+.easy a{color:#a8005c;font-weight:800}
+.legend{display:flex;flex-wrap:wrap;gap:8px;font-size:.85rem;margin:6px 0 4px}
+.legend span{background:#fff;border-radius:999px;padding:3px 10px;border:1px solid #dcdce3}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{display:block;background:#fff;border-radius:16px;padding:16px;text-decoration:none;color:var(--k);box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:8px solid #cfcfd6;position:relative}
+a.card{border-top-color:var(--m);transition:transform .15s}a.card:hover{transform:translateY(-3px)}
+.card.focus{border-top-color:var(--y)}
+.card.later{opacity:.6}
+.card .no{display:inline-block;background:var(--k);color:#fff;font-weight:800;border-radius:8px;padding:1px 8px;font-size:.85rem}
+.card .ic{font-size:1.6rem;line-height:1;float:right}
+.card h3{margin:8px 0 4px;font-size:1.12rem}
+.card p{margin:0;font-size:.88rem;color:#5d5d66}
+.card .st{margin-top:10px;font-weight:800;font-size:.9rem}
+a.card .st{color:var(--m)}
+.card.focus .st{color:#8a6d00}.card.later .st{color:#8a8a94}
+.badge{display:inline-block;background:var(--y);color:var(--k);font-weight:800;font-size:.75rem;border-radius:999px;padding:1px 8px;margin-left:6px}
+.easygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.easygrid .e{background:#fff;border:2px solid #f6b8d8;border-radius:12px;padding:10px 12px;text-decoration:none;color:var(--k);font-weight:700;line-height:1.3}
+.easygrid .e b{display:block;color:#a8005c;font-size:.8rem}
+.easygrid .e.off{border-style:dashed;color:#8a8a94;font-weight:600}
+footer{text-align:center;color:#8a8a94;font-size:.8rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <a class="home" href="../">← 3. ročník – materiály</a>
+  <h1>🎓 Maturitní témata · <span>Technologie</span></h1>
+  <p>Tematické okruhy k ústní maturitní zkoušce · Technologie · obor 34-53-L/01</p>
+  <div class="cmyk"><i style="background:#009fe3"></i><i style="background:#e6007e"></i><i style="background:#ffd400"></i><i style="background:#1d1d1b"></i></div>
+</header>
+<main>
+  <div class="easy"><b class="t">⚡ Jednoduše: jen to hlavní</b><p>Zkrácené verze otázek: obrázky, hesla, samozkoušení. <a href="jednoduse/">Rozcestník jednoduše →</a></p></div>
+  <h2 class="sec">📖 Podrobně – 20 témat</h2>
+  <div class="legend"><span>🟪 hotovo – klikni</span><span>⭐ letos připravujeme</span><span>⬜ později</span></div>
+  <div class="grid">
+    <div class="card later">
+      <span class="no">1</span><span class="ic">🔷</span>
+      <h3>1. Vektorová a rastrová grafika</h3>
+      <p>Definice vektorové a rastrové grafiky, vlastnosti a vzájemné porovnání. Formáty a software pro zpracování vektorové a rastrové grafiky, příklady použití.</p>
+      <div class="st">později</div>
+    </div>
+    <a class="card" href="tema-02-predtiskova-priprava/">
+      <span class="no">2</span><span class="badge">⭐ letos</span><span class="ic">🖨️</span>
+      <h3>2. Předtisková příprava (Prepress)</h3>
+      <p>Náhled a nátisk, montáž, kontrola tiskových dat před tiskem. RIP a jeho nastavení, DPI, LPI. Zhotovení tiskové formy, osvit a osvitové jednotky (technologie CTP, CTF).</p>
+      <div class="st">Otevřít otázku →</div>
+    </a>
+    <div class="card later">
+      <span class="no">3</span><span class="ic">🅰️</span>
+      <h3>3. Písmo</h3>
+      <p>Historický vývoj písma, klasifikace tiskových písem, základní typografické názvosloví.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card focus">
+      <span class="no">4</span><span class="badge">⭐ letos</span><span class="ic">🔤</span>
+      <h3>4. Počítačová typografie</h3>
+      <p>Typy písmových souborů. Typografie na webu. Typografická měrná soustava a měření písma v současnosti. Výroba písma a základní písmové pojmy.</p>
+      <div class="st">⭐ letos · připravujeme</div>
+    </div>
+    <div class="card focus">
+      <span class="no">5</span><span class="badge">⭐ letos</span><span class="ic">📝</span>
+      <h3>5. Úprava textu</h3>
+      <p>Základní typografické pojmy a pravidla. Úprava řádků, odstavců a nadpisů, vyznačování v textu. Typografické chyby a korektury.</p>
+      <div class="st">⭐ letos · připravujeme</div>
+    </div>
+    <div class="card later">
+      <span class="no">6</span><span class="ic">🎨</span>
+      <h3>6. Barva, správa barev</h3>
+      <p>Světlo a barva. Barvové režimy. Závislé a nezávislé barvové prostory. Správa a nastavení barev, tvorba barevných profilů a použití v aplikacích. Vzorníky barev.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card focus">
+      <span class="no">7</span><span class="badge">⭐ letos</span><span class="ic">📐</span>
+      <h3>7. Návrh a sazba</h3>
+      <p>Návrh a kompozice dokumentu. Druhy sazby a jejich použití. Uspořádání textu a obrazu, práce se styly a vzorovými stránkami v sazbovém programu.</p>
+      <div class="st">⭐ letos · připravujeme</div>
+    </div>
+    <div class="card later">
+      <span class="no">8</span><span class="ic">🪪</span>
+      <h3>8. Akcidenční tiskoviny</h3>
+      <p>Pojem akcidence, dělení akcidenčních tiskovin. Charakteristika a pravidla pro vybrané akcidence (grafická úprava, písmo, formát, materiál, vhodné typy tiskových technik).</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">9</span><span class="ic">🪧</span>
+      <h3>9. Plakát</h3>
+      <p>Definice a funkce plakátu. Typy plakátu, rozměry a technické požadavky. Výroba plakátu. Historie plakátové tvorby.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">10</span><span class="ic">⭕</span>
+      <h3>10. Logo – grafická značka</h3>
+      <p>Logotyp, piktogram, logo – grafická značka. Dělení značek podle vizuálního motivu, doby používání. Požadavky pro návrh značky. Jednotný vizuální styl (účel, forma, provedení).</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card focus">
+      <span class="no">11</span><span class="badge">⭐ letos</span><span class="ic">📚</span>
+      <h3>11. Kniha</h3>
+      <p>Grafická úprava knihy, její jednotlivé části. Výroba knihy.</p>
+      <div class="st">⭐ letos · připravujeme</div>
+    </div>
+    <div class="card later">
+      <span class="no">12</span><span class="ic">🖨️</span>
+      <h3>12. Skenery a skenování</h3>
+      <p>Princip skenování, druhy přístrojů, konstrukce a parametry přístrojů. Nastavení a postup skenování, rozlišení, barevná hloubka, denzita, vhodné formáty pro uložení, OCR.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">13</span><span class="ic">💻</span>
+      <h3>13. Grafický software</h3>
+      <p>Základní přehled softwaru pro grafické zpracování, jeho použití, funkce a možnosti. Editory pro vektorovou a rastrovou grafiku, programy pro sazbu, programy pro vytváření obsahu na internetu a multimédií, specializované programy.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">14</span><span class="ic">🖥️</span>
+      <h3>14. DTP pracoviště</h3>
+      <p>Vysvětlení pojmu DTP; pracovní prostředí a ergonomie; hardwarové vybavení (počítače, monitory, tiskárny, skenery, digitální fotoaparáty), softwarové vybavení, zálohování dat.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card focus">
+      <span class="no">15</span><span class="badge">⭐ letos</span><span class="ic">📄</span>
+      <h3>15. PDF formát</h3>
+      <p>Popis formátu, využití, PostScript, specifikace PDF, programy. Tvorba korektního souboru PDF a jeho parametry, předtisková kontrola, komunikace s tiskárnou.</p>
+      <div class="st">⭐ letos · připravujeme</div>
+    </div>
+    <div class="card later">
+      <span class="no">16</span><span class="ic">🏷️</span>
+      <h3>16. Signmaking, velkoformátový tisk</h3>
+      <p>Produkty signmakingu. Velkoformátové nosiče reklamy, řezaná grafika. Příklady použití a jejich technologická příprava. Technologie pro velkoformátový tisk a používané materiály.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">17</span><span class="ic">📷</span>
+      <h3>17. Fotografie a fotografování</h3>
+      <p>Popis a princip digitálních fotoaparátů. Fotografování: nastavení expozice, hloubka ostrosti, ISO, režimy fotografování. Formáty pro ukládání fotografií. Stručná historie fotografie.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">18</span><span class="ic">🖼️</span>
+      <h3>18. Předlohy pro reprodukci</h3>
+      <p>Předlohy pro reprodukci – textové a obrazové. Druhy obrazových předloh (pérové, polotónové, barevné). Požadavky na obrazové předlohy, rozlišení, vhodné obrazové formáty pro ukládání (elektronické a tiskové účely).</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card later">
+      <span class="no">19</span><span class="ic">📣</span>
+      <h3>19. Reklama a média</h3>
+      <p>Co je to reklama, funkce reklamy, typy reklamy a reklamních médií. Příklady z historie reklamy. Etický kodex reklamy.</p>
+      <div class="st">později</div>
+    </div>
+    <div class="card focus">
+      <span class="no">20</span><span class="badge">⭐ letos</span><span class="ic">🌐</span>
+      <h3>20. Internet</h3>
+      <p>Co je to internet, jak funguje, služby internetu. Stručná historie internetu. Tvorba internetových stránek – použité technologie, pracovní postupy a nástroje (software). Obrazové formáty pro tvorbu internetových stránek a typografie na webu.</p>
+      <div class="st">⭐ letos · připravujeme</div>
+    </div>
+  </div>
+</main>
+<footer>Maturitní témata · Technologie · Reprodukční grafik pro média · VOŠ, SŠ, ZŠ a MŠ Hradec Králové</footer>
+</body>
+</html>
